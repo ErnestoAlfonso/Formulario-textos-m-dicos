@@ -4,10 +4,10 @@ BASE_DIR = Path(__file__).parent
 SCHEMAS_DIR = BASE_DIR / "schemas"
 JSON_PATH = SCHEMAS_DIR / "json_IA.json"
 
-# Whisper config
-WHISPER_MODEL_SIZE = "medium"
-WHISPER_DEVICE = "cpu"
-WHISPER_COMPUTE_TYPE = "int8"
+# Whisper config (GPU NVIDIA con 24GB VRAM)
+WHISPER_MODEL_SIZE = "large-v3"
+WHISPER_DEVICE = "cuda"
+WHISPER_COMPUTE_TYPE = "float16"
 WHISPER_LANGUAGE = "es"
 WHISPER_BEAM_SIZE = 5
 

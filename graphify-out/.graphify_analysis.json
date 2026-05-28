@@ -1,0 +1,214 @@
+{
+  "communities": {
+    "0": [
+      "APIData_Flow",
+      "FastAPI_Backend",
+      "Metadata_Tracking",
+      "Ollama_Llama",
+      "PLAN_COMPLETO",
+      "Pipeline_4Step",
+      "Pydantic_Validation",
+      "Validation_Mapper",
+      "Whisper_STT",
+      "models___init__",
+      "requirements_txt",
+      "routers___init__",
+      "services___init__"
+    ],
+    "1": [
+      "clinical_summary_concept",
+      "config",
+      "extractor",
+      "fastapi_framework",
+      "jsonIA",
+      "main",
+      "mapper",
+      "ollama_service",
+      "process_router",
+      "response_models",
+      "summarizer",
+      "transcription",
+      "whisper_faster"
+    ],
+    "2": [
+      "form_questionnaire",
+      "section_actividad_fisica",
+      "section_alergias",
+      "section_anamnesis",
+      "section_antecedentes_familiares",
+      "section_antecedentes_ginecologicos",
+      "section_enfermedades_pasadas",
+      "section_habitos",
+      "section_historia_profesional",
+      "section_inmunizaciones",
+      "section_intervenciones_quirurgicas",
+      "section_tratamientos_actuales"
+    ],
+    "3": [
+      "AutoFill_Form",
+      "Demo_Data_Attributes",
+      "File_Upload",
+      "Frontend_Modal_Integration",
+      "JSON_Form_142",
+      "Microphone_Capture",
+      "Preview_UI",
+      "Question_Types",
+      "demo_html",
+      "ia_integration_js",
+      "ia_modal_css",
+      "ia_modal_html"
+    ],
+    "4": [
+      "Clinical_Summary_Prompt",
+      "Code_Extraction_Prompt",
+      "Code_Lookup",
+      "Error_Handling_LLM",
+      "Parallel_Processing",
+      "Privacy_Local",
+      "TwoStep_LLM_Strategy"
+    ]
+  },
+  "cohesion": {
+    "0": 0.18,
+    "1": 0.27,
+    "2": 0.17,
+    "3": 0.24,
+    "4": 0.29
+  },
+  "gods": [
+    {
+      "id": "form_questionnaire",
+      "label": "Medical History Form",
+      "degree": 14
+    },
+    {
+      "id": "PLAN_COMPLETO",
+      "label": "Plan completo: Audio médico a Formulario JSON",
+      "degree": 11
+    },
+    {
+      "id": "TwoStep_LLM_Strategy",
+      "label": "Two-Step LLM Extraction Strategy",
+      "degree": 7
+    },
+    {
+      "id": "ia_integration_js",
+      "label": "IA frontend integration script",
+      "degree": 7
+    },
+    {
+      "id": "Pipeline_4Step",
+      "label": "4-Step Audio-to-Form Pipeline",
+      "degree": 5
+    },
+    {
+      "id": "Frontend_Modal_Integration",
+      "label": "Frontend Modal with 3 states: ready, processing, preview",
+      "degree": 5
+    },
+    {
+      "id": "clinical_summary_concept",
+      "label": "Clinical Summary",
+      "degree": 3
+    },
+    {
+      "id": "JSON_Form_142",
+      "label": "142-Question Medical Form JSON",
+      "degree": 3
+    },
+    {
+      "id": "ia_modal_html",
+      "label": "IA modal component",
+      "degree": 3
+    },
+    {
+      "id": "Demo_Data_Attributes",
+      "label": "Demo HTML with data-* attributes for form binding",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "API request/response flow to /process-audio",
+      "target": "Plan completo: Audio médico a Formulario JSON",
+      "source_files": [
+        "medical-audio-backend/frontend/ia-integration.js",
+        "PLAN_COMPLETO.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ code); connects across different repos/directories; peripheral node `API request/response flow to /process-audio` unexpectedly reaches hub `Plan completo: Audio médico a Formulario JSON`"
+    },
+    {
+      "source": "services Python package",
+      "target": "4-Step Audio-to-Form Pipeline",
+      "source_files": [
+        "medical-audio-backend/services/__init__.py",
+        "PLAN_COMPLETO.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ code); connects across different repos/directories; peripheral node `services Python package` unexpectedly reaches hub `4-Step Audio-to-Form Pipeline`"
+    },
+    {
+      "source": "routers Python package",
+      "target": "FastAPI Backend Server",
+      "source_files": [
+        "medical-audio-backend/routers/__init__.py",
+        "PLAN_COMPLETO.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ code); connects across different repos/directories"
+    },
+    {
+      "source": "models Python package",
+      "target": "Pydantic v2 Validation",
+      "source_files": [
+        "medical-audio-backend/models/__init__.py",
+        "PLAN_COMPLETO.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ code); connects across different repos/directories"
+    },
+    {
+      "source": "Clinical Summary",
+      "target": "Medical History Form",
+      "source_files": [
+        "medical-audio-backend/services/summarizer.py",
+        "json_IA.json"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Plan completo: Audio médico a Formulario JSON` connect `Community 0` to `Community 3`, `Community 4`?",
+      "why": "High betweenness centrality (0.235) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Medical History Form` connect `Community 2` to `Community 1`?",
+      "why": "High betweenness centrality (0.129) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `IA frontend integration script` connect `Community 3` to `Community 0`?",
+      "why": "High betweenness centrality (0.103) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `Medical History Form` (e.g. with `extractor.py` and `Clinical Summary`) actually correct?",
+      "why": "`Medical History Form` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Faster Whisper`, `FastAPI`, `Historia Profesional` to the rest of the system?",
+      "why": "25 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

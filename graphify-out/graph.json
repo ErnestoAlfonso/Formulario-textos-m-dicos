@@ -1,0 +1,1156 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "audio_processing_pipeline",
+        "label": "Audio Processing Pipeline",
+        "nodes": [
+          "transcription",
+          "summarizer",
+          "extractor",
+          "mapper"
+        ],
+        "relation": "sequential_pipeline",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "medical-audio-backend/routers/process.py"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "json_IA.json",
+      "file_type": "document",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "jsonIA",
+      "community": 1,
+      "norm_label": "json_ia.json"
+    },
+    {
+      "label": "config.py",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/config.py",
+      "source_location": null,
+      "id": "config",
+      "community": 1,
+      "norm_label": "config.py"
+    },
+    {
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/main.py",
+      "source_location": null,
+      "id": "main",
+      "community": 1,
+      "norm_label": "main.py"
+    },
+    {
+      "label": "mapper.py",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/services/mapper.py",
+      "source_location": null,
+      "id": "mapper",
+      "community": 1,
+      "norm_label": "mapper.py"
+    },
+    {
+      "label": "transcription.py",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/services/transcription.py",
+      "source_location": null,
+      "id": "transcription",
+      "community": 1,
+      "norm_label": "transcription.py"
+    },
+    {
+      "label": "summarizer.py",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/services/summarizer.py",
+      "source_location": null,
+      "id": "summarizer",
+      "community": 1,
+      "norm_label": "summarizer.py"
+    },
+    {
+      "label": "extractor.py",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/services/extractor.py",
+      "source_location": null,
+      "id": "extractor",
+      "community": 1,
+      "norm_label": "extractor.py"
+    },
+    {
+      "label": "process.py",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/routers/process.py",
+      "source_location": null,
+      "id": "process_router",
+      "community": 1,
+      "norm_label": "process.py"
+    },
+    {
+      "label": "response.py",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/models/response.py",
+      "source_location": null,
+      "id": "response_models",
+      "community": 1,
+      "norm_label": "response.py"
+    },
+    {
+      "label": "Faster Whisper",
+      "file_type": "rationale",
+      "source_file": "medical-audio-backend/services/transcription.py",
+      "source_location": null,
+      "id": "whisper_faster",
+      "community": 1,
+      "norm_label": "faster whisper"
+    },
+    {
+      "label": "Ollama LLM",
+      "file_type": "rationale",
+      "source_file": "medical-audio-backend/services/summarizer.py",
+      "source_location": null,
+      "id": "ollama_service",
+      "community": 1,
+      "norm_label": "ollama llm"
+    },
+    {
+      "label": "FastAPI",
+      "file_type": "rationale",
+      "source_file": "medical-audio-backend/main.py",
+      "source_location": null,
+      "id": "fastapi_framework",
+      "community": 1,
+      "norm_label": "fastapi"
+    },
+    {
+      "label": "Clinical Summary",
+      "file_type": "rationale",
+      "source_file": "medical-audio-backend/services/summarizer.py",
+      "source_location": null,
+      "id": "clinical_summary_concept",
+      "community": 1,
+      "norm_label": "clinical summary"
+    },
+    {
+      "label": "Medical History Form",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "form_questionnaire",
+      "community": 2,
+      "norm_label": "medical history form"
+    },
+    {
+      "label": "Historia Profesional",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_historia_profesional",
+      "community": 2,
+      "norm_label": "historia profesional"
+    },
+    {
+      "label": "Antecedentes Familiares",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_antecedentes_familiares",
+      "community": 2,
+      "norm_label": "antecedentes familiares"
+    },
+    {
+      "label": "Enfermedades Pasadas",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_enfermedades_pasadas",
+      "community": 2,
+      "norm_label": "enfermedades pasadas"
+    },
+    {
+      "label": "Tratamientos Actuales",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_tratamientos_actuales",
+      "community": 2,
+      "norm_label": "tratamientos actuales"
+    },
+    {
+      "label": "Intervenciones Quir\u00fargicas",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_intervenciones_quirurgicas",
+      "community": 2,
+      "norm_label": "intervenciones quirurgicas"
+    },
+    {
+      "label": "Antecedentes Ginecol\u00f3gicos",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_antecedentes_ginecologicos",
+      "community": 2,
+      "norm_label": "antecedentes ginecologicos"
+    },
+    {
+      "label": "H\u00e1bitos",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_habitos",
+      "community": 2,
+      "norm_label": "habitos"
+    },
+    {
+      "label": "Alergias",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_alergias",
+      "community": 2,
+      "norm_label": "alergias"
+    },
+    {
+      "label": "Inmunizaciones",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_inmunizaciones",
+      "community": 2,
+      "norm_label": "inmunizaciones"
+    },
+    {
+      "label": "Actividad F\u00edsica",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_actividad_fisica",
+      "community": 2,
+      "norm_label": "actividad fisica"
+    },
+    {
+      "label": "Anamnesis",
+      "file_type": "rationale",
+      "source_file": "json_IA.json",
+      "source_location": null,
+      "id": "section_anamnesis",
+      "community": 2,
+      "norm_label": "anamnesis"
+    },
+    {
+      "label": "Plan completo: Audio m\u00e9dico a Formulario JSON",
+      "file_type": "document",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": null,
+      "id": "PLAN_COMPLETO",
+      "community": 0,
+      "norm_label": "plan completo: audio medico a formulario json"
+    },
+    {
+      "label": "Two-Step LLM Extraction Strategy",
+      "file_type": "rationale",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "87-99",
+      "id": "TwoStep_LLM_Strategy",
+      "community": 4,
+      "norm_label": "two-step llm extraction strategy"
+    },
+    {
+      "label": "faster-whisper Speech-to-Text",
+      "file_type": "code",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "37",
+      "id": "Whisper_STT",
+      "community": 0,
+      "norm_label": "faster-whisper speech-to-text"
+    },
+    {
+      "label": "Ollama + llama3.1:8b LLM",
+      "file_type": "code",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "38",
+      "id": "Ollama_Llama",
+      "community": 0,
+      "norm_label": "ollama + llama3.1:8b llm"
+    },
+    {
+      "label": "FastAPI Backend Server",
+      "file_type": "code",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "39",
+      "id": "FastAPI_Backend",
+      "community": 0,
+      "norm_label": "fastapi backend server"
+    },
+    {
+      "label": "Pydantic v2 Validation",
+      "file_type": "code",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "40",
+      "id": "Pydantic_Validation",
+      "community": 0,
+      "norm_label": "pydantic v2 validation"
+    },
+    {
+      "label": "4-Step Audio-to-Form Pipeline",
+      "file_type": "rationale",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "47-85",
+      "id": "Pipeline_4Step",
+      "community": 0,
+      "norm_label": "4-step audio-to-form pipeline"
+    },
+    {
+      "label": "142-Question Medical Form JSON",
+      "file_type": "document",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "6-29",
+      "id": "JSON_Form_142",
+      "community": 3,
+      "norm_label": "142-question medical form json"
+    },
+    {
+      "label": "Question Types: yesno, multiple, choice, yesnoremember, free",
+      "file_type": "document",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "16-22",
+      "id": "Question_Types",
+      "community": 3,
+      "norm_label": "question types: yesno, multiple, choice, yesnoremember, free"
+    },
+    {
+      "label": "Valid Code Lookup Structure",
+      "file_type": "code",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "168-179",
+      "id": "Code_Lookup",
+      "community": 4,
+      "norm_label": "valid code lookup structure"
+    },
+    {
+      "label": "Parallel Section Processing (asyncio.gather)",
+      "file_type": "code",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "360-384",
+      "id": "Parallel_Processing",
+      "community": 4,
+      "norm_label": "parallel section processing (asyncio.gather)"
+    },
+    {
+      "label": "LLM JSON Parse Error Recovery",
+      "file_type": "code",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "386-406",
+      "id": "Error_Handling_LLM",
+      "community": 4,
+      "norm_label": "llm json parse error recovery"
+    },
+    {
+      "label": "Local-Only Privacy Constraint",
+      "file_type": "rationale",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "838-840",
+      "id": "Privacy_Local",
+      "community": 4,
+      "norm_label": "local-only privacy constraint"
+    },
+    {
+      "label": "Clinical Summary Prompt (FASE 3)",
+      "file_type": "rationale",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "258-287",
+      "id": "Clinical_Summary_Prompt",
+      "community": 4,
+      "norm_label": "clinical summary prompt (fase 3)"
+    },
+    {
+      "label": "Code Extraction Prompt (FASE 4)",
+      "file_type": "rationale",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "319-356",
+      "id": "Code_Extraction_Prompt",
+      "community": 4,
+      "norm_label": "code extraction prompt (fase 4)"
+    },
+    {
+      "label": "Code Validation and Output Mapper",
+      "file_type": "code",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "416-445",
+      "id": "Validation_Mapper",
+      "community": 0,
+      "norm_label": "code validation and output mapper"
+    },
+    {
+      "label": "Performance Metadata Tracking",
+      "file_type": "code",
+      "source_file": "PLAN_COMPLETO.md",
+      "source_location": "479-487",
+      "id": "Metadata_Tracking",
+      "community": 0,
+      "norm_label": "performance metadata tracking"
+    },
+    {
+      "label": "requirements.txt dependencies",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/requirements.txt",
+      "source_location": null,
+      "id": "requirements_txt",
+      "community": 0,
+      "norm_label": "requirements.txt dependencies"
+    },
+    {
+      "label": "Demo frontend page",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/demo.html",
+      "source_location": null,
+      "id": "demo_html",
+      "community": 3,
+      "norm_label": "demo frontend page"
+    },
+    {
+      "label": "IA modal component",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/ia-modal.html",
+      "source_location": null,
+      "id": "ia_modal_html",
+      "community": 3,
+      "norm_label": "ia modal component"
+    },
+    {
+      "label": "IA modal styles",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/ia-modal.css",
+      "source_location": null,
+      "id": "ia_modal_css",
+      "community": 3,
+      "norm_label": "ia modal styles"
+    },
+    {
+      "label": "IA frontend integration script",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source_location": null,
+      "id": "ia_integration_js",
+      "community": 3,
+      "norm_label": "ia frontend integration script"
+    },
+    {
+      "label": "models Python package",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/models/__init__.py",
+      "source_location": null,
+      "id": "models___init__",
+      "community": 0,
+      "norm_label": "models python package"
+    },
+    {
+      "label": "routers Python package",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/routers/__init__.py",
+      "source_location": null,
+      "id": "routers___init__",
+      "community": 0,
+      "norm_label": "routers python package"
+    },
+    {
+      "label": "services Python package",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/services/__init__.py",
+      "source_location": null,
+      "id": "services___init__",
+      "community": 0,
+      "norm_label": "services python package"
+    },
+    {
+      "label": "Frontend Modal with 3 states: ready, processing, preview",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/ia-modal.html",
+      "source_location": "7-47",
+      "id": "Frontend_Modal_Integration",
+      "community": 3,
+      "norm_label": "frontend modal with 3 states: ready, processing, preview"
+    },
+    {
+      "label": "MediaRecorder microphone capture",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source_location": "34-52",
+      "id": "Microphone_Capture",
+      "community": 3,
+      "norm_label": "mediarecorder microphone capture"
+    },
+    {
+      "label": "Audio file upload handler",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source_location": "74-77",
+      "id": "File_Upload",
+      "community": 3,
+      "norm_label": "audio file upload handler"
+    },
+    {
+      "label": "Result preview and confirmation UI",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source_location": "109-131",
+      "id": "Preview_UI",
+      "community": 3,
+      "norm_label": "result preview and confirmation ui"
+    },
+    {
+      "label": "Automatic form fill via data-question-id/data-code",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source_location": "140-159",
+      "id": "AutoFill_Form",
+      "community": 3,
+      "norm_label": "automatic form fill via data-question-id/data-code"
+    },
+    {
+      "label": "API request/response flow to /process-audio",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source_location": "79-107",
+      "id": "APIData_Flow",
+      "community": 0,
+      "norm_label": "api request/response flow to /process-audio"
+    },
+    {
+      "label": "Demo HTML with data-* attributes for form binding",
+      "file_type": "code",
+      "source_file": "medical-audio-backend/frontend/demo.html",
+      "source_location": "77-108",
+      "id": "Demo_Data_Attributes",
+      "community": 3,
+      "norm_label": "demo html with data-* attributes for form binding"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/services/mapper.py",
+      "source": "mapper",
+      "target": "jsonIA"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/routers/process.py",
+      "source": "process_router",
+      "target": "config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/services/transcription.py",
+      "source": "transcription",
+      "target": "config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/services/summarizer.py",
+      "source": "summarizer",
+      "target": "config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/services/extractor.py",
+      "source": "extractor",
+      "target": "config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/services/mapper.py",
+      "source": "mapper",
+      "target": "config"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/main.py",
+      "source": "main",
+      "target": "fastapi_framework"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/main.py",
+      "source": "main",
+      "target": "process_router"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/routers/process.py",
+      "source": "process_router",
+      "target": "mapper"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/services/mapper.py",
+      "source": "mapper",
+      "target": "form_questionnaire"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "medical-audio-backend/services/extractor.py",
+      "source": "extractor",
+      "target": "mapper"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/routers/process.py",
+      "source": "process_router",
+      "target": "transcription"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/services/transcription.py",
+      "source": "transcription",
+      "target": "whisper_faster"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "medical-audio-backend/routers/process.py",
+      "source": "summarizer",
+      "target": "transcription"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/routers/process.py",
+      "source": "process_router",
+      "target": "summarizer"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/services/summarizer.py",
+      "source": "summarizer",
+      "target": "ollama_service"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/services/summarizer.py",
+      "source": "summarizer",
+      "target": "clinical_summary_concept"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "medical-audio-backend/routers/process.py",
+      "source": "extractor",
+      "target": "summarizer"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/routers/process.py",
+      "source": "process_router",
+      "target": "extractor"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/services/extractor.py",
+      "source": "extractor",
+      "target": "ollama_service"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "medical-audio-backend/services/extractor.py",
+      "source": "extractor",
+      "target": "form_questionnaire"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "medical-audio-backend/services/extractor.py",
+      "source": "extractor",
+      "target": "clinical_summary_concept"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "medical-audio-backend/routers/process.py",
+      "source": "process_router",
+      "target": "response_models"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "medical-audio-backend/services/summarizer.py",
+      "source": "clinical_summary_concept",
+      "target": "form_questionnaire"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_historia_profesional"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_antecedentes_familiares"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_enfermedades_pasadas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_tratamientos_actuales"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_intervenciones_quirurgicas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_antecedentes_ginecologicos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_habitos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_alergias"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_inmunizaciones"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_actividad_fisica"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "json_IA.json",
+      "source": "form_questionnaire",
+      "target": "section_anamnesis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "PLAN_COMPLETO",
+      "target": "TwoStep_LLM_Strategy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "PLAN_COMPLETO",
+      "target": "Pipeline_4Step"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "PLAN_COMPLETO",
+      "target": "JSON_Form_142"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "PLAN_COMPLETO",
+      "target": "Whisper_STT"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "PLAN_COMPLETO",
+      "target": "Ollama_Llama"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "PLAN_COMPLETO",
+      "target": "FastAPI_Backend"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "PLAN_COMPLETO",
+      "target": "Pydantic_Validation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "PLAN_COMPLETO",
+      "target": "requirements_txt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "PLAN_COMPLETO",
+      "target": "Metadata_Tracking"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source": "APIData_Flow",
+      "target": "PLAN_COMPLETO"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "PLAN_COMPLETO",
+      "target": "Privacy_Local"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "TwoStep_LLM_Strategy",
+      "target": "Clinical_Summary_Prompt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "TwoStep_LLM_Strategy",
+      "target": "Code_Extraction_Prompt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "TwoStep_LLM_Strategy",
+      "target": "Code_Lookup"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "TwoStep_LLM_Strategy",
+      "target": "Parallel_Processing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "TwoStep_LLM_Strategy",
+      "target": "Error_Handling_LLM"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "TwoStep_LLM_Strategy",
+      "target": "Privacy_Local"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "Pipeline_4Step",
+      "target": "Whisper_STT"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "Pipeline_4Step",
+      "target": "Ollama_Llama"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "medical-audio-backend/routers/__init__.py",
+      "source": "routers___init__",
+      "target": "FastAPI_Backend"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "medical-audio-backend/models/__init__.py",
+      "source": "models___init__",
+      "target": "Pydantic_Validation"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "Pipeline_4Step",
+      "target": "Validation_Mapper"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "medical-audio-backend/services/__init__.py",
+      "source": "services___init__",
+      "target": "Pipeline_4Step"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN_COMPLETO.md",
+      "source": "JSON_Form_142",
+      "target": "Question_Types"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "medical-audio-backend/frontend/demo.html",
+      "source": "JSON_Form_142",
+      "target": "Demo_Data_Attributes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/demo.html",
+      "source": "demo_html",
+      "target": "ia_modal_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/demo.html",
+      "source": "demo_html",
+      "target": "Demo_Data_Attributes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-modal.html",
+      "source": "ia_modal_html",
+      "target": "ia_modal_css"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-modal.html",
+      "source": "ia_modal_html",
+      "target": "ia_integration_js"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-modal.css",
+      "source": "ia_modal_css",
+      "target": "Frontend_Modal_Integration"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source": "ia_integration_js",
+      "target": "Microphone_Capture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source": "ia_integration_js",
+      "target": "File_Upload"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source": "ia_integration_js",
+      "target": "APIData_Flow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source": "ia_integration_js",
+      "target": "Preview_UI"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source": "ia_integration_js",
+      "target": "AutoFill_Form"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source": "ia_integration_js",
+      "target": "Frontend_Modal_Integration"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-modal.html",
+      "source": "Frontend_Modal_Integration",
+      "target": "Microphone_Capture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-modal.html",
+      "source": "Frontend_Modal_Integration",
+      "target": "File_Upload"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-modal.html",
+      "source": "Frontend_Modal_Integration",
+      "target": "Preview_UI"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/frontend/ia-integration.js",
+      "source": "AutoFill_Form",
+      "target": "Demo_Data_Attributes"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "audio_processing_pipeline",
+      "label": "Audio Processing Pipeline",
+      "nodes": [
+        "transcription",
+        "summarizer",
+        "extractor",
+        "mapper"
+      ],
+      "relation": "sequential_pipeline",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "medical-audio-backend/routers/process.py"
+    }
+  ],
+  "built_at_commit": "3473818f0fb7384a2f983f2bf33768adad09e9ae"
+}
