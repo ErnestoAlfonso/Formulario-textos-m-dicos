@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo - Reconocimiento Médico Asistido</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+      background: #f8f9fa;
+    }
+    h1 { color: #1a1a2e; }
+    .demo-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 16px;
+    }
+    .btn-ia {
+      background: #4361ee;
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-ia:hover { background: #3a56d4; }
+    .form-section {
+      margin-top: 24px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .form-section h3 { margin-top: 0; }
+    .question-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .question-row label { flex: 1; }
+    .question-row input[type="checkbox"],
+    .question-row input[type="radio"] {
+      margin-right: 4px;
+    }
+    code {
+      background: #e9ecef;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🩺 Reconocimiento Médico Asistido por IA</h1>
+
+  <div class="demo-card">
+    <p>Este botón simula el botón existente en el formulario médico.</p>
+    <button class="btn-ia" data-action="reconocimiento-asistido">
+      🧠 Reconocimiento Asistido por IA
+    </button>
+  </div>
+
+  <div class="demo-card">
+    <h2>Vista previa del formulario</h2>
+    <p>Cuando confirmes, los campos se rellenarán automáticamente usando los atributos <code>data-question-id</code> y <code>data-code</code>.</p>
+
+    <div class="form-section">
+      <h3>HISTORIA PROFESIONAL</h3>
+      <div class="question-row" data-question-id="A1-1">
+        <label>¿Ha trabajado anteriormente?</label>
+        <label><input type="radio" name="A1-1" data-code="A1-11"> Sí</label>
+        <label><input type="radio" name="A1-1" data-code="A1-12"> No</label>
+      </div>
+      <div class="question-row" data-question-id="A1-121">
+        <label>¿En qué tipo industria?</label>
+        <label><input type="checkbox" data-code="A1-12111"> Alimentaria</label>
+        <label><input type="checkbox" data-code="A1-12112"> Automotriz</label>
+        <label><input type="checkbox" data-code="A1-12119"> Metalúrgica</label>
+        <label><input type="checkbox" data-code="A1-12122"> Salud</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h3>ANTECEDENTES FAMILIARES</h3>
+      <div class="question-row" data-question-id="B1-1">
+        <label>Antecedentes familiares de interés</label>
+        <label><input type="checkbox" data-code="B1-11"> Hipertensión arterial</label>
+        <label><input type="checkbox" data-code="B1-12"> Diabetes</label>
+        <label><input type="checkbox" data-code="B1-13"> Cardiopatía</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h3>ALERGIAS</h3>
+      <div class="question-row" data-question-id="D1-1">
+        <label>¿Presenta alergias?</label>
+        <label><input type="radio" name="D1-1" data-code="D1-11"> Sí</label>
+        <label><input type="radio" name="D1-1" data-code="D1-12"> No</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Incluir el modal de IA -->
+  <div id="modal-ia-container"></div>
+  <script>
+    fetch('ia-modal.html')
+      .then(r => r.text())
+      .then(html => {
+        document.getElementById('modal-ia-container').innerHTML = html;
+      });
+  </script>
+</body>
+</html>

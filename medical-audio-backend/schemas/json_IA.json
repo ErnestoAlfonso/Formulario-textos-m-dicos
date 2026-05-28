@@ -1,0 +1,2998 @@
+{
+  "history": {
+    "entry_question_id": "A1-1",
+    "questions": [
+      {
+        "id": "A1-1",
+        "text": "¿Ha trabajado anteriormente?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "HISTORIA PROFESIONAL",
+        "codes": {
+          "A1-11": "Si",
+          "A1-12": "No"
+        },
+        "transitions": {
+          "A1-11": "A1-121",
+          "A1-12": "A1-2"
+        }
+      },
+      {
+        "id": "A1-121",
+        "text": "¿En qué tipo industria?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "HISTORIA PROFESIONAL",
+        "codes": {
+          "A1-12111": "Alimentaria",
+          "A1-12112": "Automotriz",
+          "A1-12113": "Educación",
+          "A1-12114": "Electrónica",
+          "A1-12115": "Energética",
+          "A1-12116": "Farmacéutica",
+          "A1-12117": "Hostelería",
+          "A1-12118": "Maderera",
+          "A1-12119": "Metalúrgica",
+          "A1-12120": "Papelera",
+          "A1-12121": "Química",
+          "A1-12122": "Salud",
+          "A1-12123": "Servicio Público",
+          "A1-12124": "Textil",
+          "A1-12125": "Turismo",
+          "A1-12126": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "A1-12111": "A1-122",
+          "A1-12112": "A1-122",
+          "A1-12113": "A1-122",
+          "A1-12114": "A1-122",
+          "A1-12115": "A1-122",
+          "A1-12116": "A1-122",
+          "A1-12117": "A1-122",
+          "A1-12118": "A1-122",
+          "A1-12119": "A1-122",
+          "A1-12120": "A1-122",
+          "A1-12121": "A1-122",
+          "A1-12122": "A1-122",
+          "A1-12123": "A1-122",
+          "A1-12124": "A1-122",
+          "A1-12125": "A1-122",
+          "A1-12126": "A1-122"
+        }
+      },
+      {
+        "id": "A1-122",
+        "text": "¿A qué riesgo ha estado expuesto?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "HISTORIA PROFESIONAL",
+        "codes": {
+          "A1-12211": "Biológicos",
+          "A1-12212": "Caidas de alturas",
+          "A1-12213": "Espacio confinado",
+          "A1-12214": "Manipulación de Cargas",
+          "A1-12215": "Movimientos repetitivos",
+          "A1-12216": "Pantallas de visualización",
+          "A1-12217": "Posturas forzadas",
+          "A1-12218": "Químicos",
+          "A1-12219": "Radiaciones X",
+          "A1-12220": "Radiaciones ultravioleta",
+          "A1-12221": "Riesgo eléctrico",
+          "A1-12222": "Ruido",
+          "A1-12223": "Sustancias cancerígenas",
+          "A1-12224": "Temperaturas altas",
+          "A1-12225": "Temperaturas bajas",
+          "A1-12226": "Turnicidad",
+          "A1-12227": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "A1-12211": "A1-2",
+          "A1-12212": "A1-2",
+          "A1-12213": "A1-2",
+          "A1-12214": "A1-2",
+          "A1-12215": "A1-2",
+          "A1-12216": "A1-2",
+          "A1-12217": "A1-2",
+          "A1-12218": "A1-2",
+          "A1-12219": "A1-2",
+          "A1-12220": "A1-2",
+          "A1-12221": "A1-2",
+          "A1-12222": "A1-2",
+          "A1-12223": "A1-2",
+          "A1-12224": "A1-2",
+          "A1-12225": "A1-2",
+          "A1-12226": "A1-2",
+          "A1-12227": "A1-2"
+        }
+      },
+      {
+        "id": "A1-2",
+        "text": "¿En su trabajo actual su jornada diaria es a tiempo completo?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "HISTORIA PROFESIONAL",
+        "codes": {
+          "A1-21": "Si",
+          "A1-22": "No"
+        },
+        "transitions": {
+          "A1-21": "A1-3",
+          "A1-22": "A1-3"
+        }
+      },
+      {
+        "id": "A1-3",
+        "text": "¿En su trabajo actual está expuesto a riesgos?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "HISTORIA PROFESIONAL",
+        "codes": {
+          "A1-31": "Si",
+          "A1-32": "No"
+        },
+        "transitions": {
+          "A1-31": "A1-321",
+          "A1-32": "A1-4"
+        }
+      },
+      {
+        "id": "A1-321",
+        "text": "¿A qué riesgo está expuesto?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "HISTORIA PROFESIONAL",
+        "codes": {
+          "A1-3211": "Biológicos",
+          "A1-3212": "Caidas de alturas",
+          "A1-3213": "Espacio confinado",
+          "A1-3214": "Manipulación de Cargas",
+          "A1-3215": "Movimientos repetitivos",
+          "A1-3216": "Pantallas de visualización",
+          "A1-3217": "Posturas forzadas",
+          "A1-3218": "Químicos",
+          "A1-3219": "Radiaciones X",
+          "A1-3220": "Radiaciones ultravioleta",
+          "A1-3221": "Riesgo eléctrico",
+          "A1-3222": "Ruido",
+          "A1-3223": "Sustancias cancerígenas",
+          "A1-3224": "Temperaturas altas",
+          "A1-3225": "Temperaturas bajas",
+          "A1-3226": "Turnicidad",
+          "A1-3227": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "A1-3211": "A1-4",
+          "A1-3212": "A1-4",
+          "A1-3213": "A1-4",
+          "A1-3214": "A1-4",
+          "A1-3215": "A1-4",
+          "A1-3216": "A1-4",
+          "A1-3217": "A1-4",
+          "A1-3218": "A1-4",
+          "A1-3219": "A1-4",
+          "A1-3220": "A1-4",
+          "A1-3221": "A1-4",
+          "A1-3222": "A1-4",
+          "A1-3223": "A1-4",
+          "A1-3224": "A1-4",
+          "A1-3225": "A1-4",
+          "A1-3226": "A1-4",
+          "A1-3227": "A1-4"
+        }
+      },
+      {
+        "id": "A1-4",
+        "text": "¿En su trabajo actual utiliza Equipos de protección individual?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "HISTORIA PROFESIONAL",
+        "codes": {
+          "A1-41": "Si",
+          "A1-42": "No"
+        },
+        "transitions": {
+          "A1-41": "A1-421",
+          "A1-42": "B1-1"
+        }
+      },
+      {
+        "id": "A1-421",
+        "text": "¿Qué EPI utiliza?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "HISTORIA PROFESIONAL",
+        "codes": {
+          "A1-4211": "Arnés",
+          "A1-4212": "Calzado específico",
+          "A1-4213": "Casco",
+          "A1-4214": "Casco auditivo",
+          "A1-4215": "Gafas",
+          "A1-4216": "Guantes específicos",
+          "A1-4217": "Máscaras",
+          "A1-4218": "Pantalla",
+          "A1-4219": "Tapones auditivos",
+          "A1-4220": "Traje especial",
+          "A1-4221": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "A1-4211": "B1-1",
+          "A1-4212": "B1-1",
+          "A1-4213": "B1-1",
+          "A1-4214": "B1-1",
+          "A1-4215": "B1-1",
+          "A1-4216": "B1-1",
+          "A1-4217": "B1-1",
+          "A1-4218": "B1-1",
+          "A1-4219": "B1-1",
+          "A1-4220": "B1-1",
+          "A1-4221": "B1-1"
+        }
+      },
+      {
+        "id": "B1-1",
+        "text": "¿Tiene su padre alguna enfermedad de interés?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANTECEDENTES FAMILIARES",
+        "codes": {
+          "B1-11": "Si",
+          "B1-12": "No"
+        },
+        "transitions": {
+          "B1-11": "B1-121",
+          "B1-12": "B1-2"
+        }
+      },
+      {
+        "id": "B1-121",
+        "text": "¿Qué enfermedades ha tenido?",
+        "question_type": "free",
+        "module": "history",
+        "section": "ANTECEDENTES FAMILIARES",
+        "codes": {
+          "B1-1211": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "B1-1211": "B1-2"
+        }
+      },
+      {
+        "id": "B1-2",
+        "text": "¿Tiene su madre alguna enfermedad de interés?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANTECEDENTES FAMILIARES",
+        "codes": {
+          "B1-21": "Si",
+          "B1-22": "No"
+        },
+        "transitions": {
+          "B1-21": "B1-221",
+          "B1-22": "B1-3"
+        }
+      },
+      {
+        "id": "B1-221",
+        "text": "¿Qué enfermedades ha tenido?",
+        "question_type": "free",
+        "module": "history",
+        "section": "ANTECEDENTES FAMILIARES",
+        "codes": {
+          "B1-2211": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "B1-2211": "B1-3"
+        }
+      },
+      {
+        "id": "B1-3",
+        "text": "¿Si tiene hermanos tienen alguna enfermedad de interés?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANTECEDENTES FAMILIARES",
+        "codes": {
+          "B1-31": "Si",
+          "B1-32": "No"
+        },
+        "transitions": {
+          "B1-31": "B1-321",
+          "B1-32": "C1-11"
+        }
+      },
+      {
+        "id": "B1-321",
+        "text": "¿Qué enfermedades ha tenido?",
+        "question_type": "free",
+        "module": "history",
+        "section": "ANTECEDENTES FAMILIARES",
+        "codes": {
+          "B1-3211": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "B1-3211": "C1-11"
+        }
+      },
+      {
+        "id": "C1-11",
+        "text": "¿Padece o ha padecido alguna enfermedad?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-111": "Si",
+          "C1-112": "No"
+        },
+        "transitions": {
+          "C1-111": "C1-2211",
+          "C1-112": "D1-1"
+        }
+      },
+      {
+        "id": "C1-2211",
+        "text": "¿Alguna enfermedad del corazón?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-22111": "Alteraciones valvulares",
+          "C1-22112": "Angor",
+          "C1-22113": "Arritmias",
+          "C1-22114": "Bloqueo auriculo ventricular",
+          "C1-22115": "Bloqueo de rama",
+          "C1-22116": "Extrasístoles",
+          "C1-22117": "Fibrilación auricular",
+          "C1-22118": "Flutter",
+          "C1-22119": "Hipertensión",
+          "C1-22120": "Hipertrofia auricular",
+          "C1-22121": "Hipertrofia ventricular",
+          "C1-22122": "Infarto",
+          "C1-22123": "Insuficencia cardíaca",
+          "C1-22124": "Portador de marcapasos",
+          "C1-22125": "Soplo cardíaco",
+          "C1-22126": "Taquicardia",
+          "C1-22127": "Varices",
+          "C1-22128": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-22111": "C1-3211",
+          "C1-22112": "C1-3211",
+          "C1-22113": "C1-3211",
+          "C1-22114": "C1-3211",
+          "C1-22115": "C1-3211",
+          "C1-22116": "C1-3211",
+          "C1-22117": "C1-3211",
+          "C1-22118": "C1-3211",
+          "C1-22119": "C1-3211",
+          "C1-22120": "C1-3211",
+          "C1-22121": "C1-3211",
+          "C1-22122": "C1-3211",
+          "C1-22123": "C1-3211",
+          "C1-22124": "C1-3211",
+          "C1-22125": "C1-3211",
+          "C1-22126": "C1-3211",
+          "C1-22127": "C1-3211",
+          "C1-22128": "C1-3211"
+        }
+      },
+      {
+        "id": "C1-3211",
+        "text": "¿Alguna enfermedad del aparato digestivo?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-32111": "Colelitiasis",
+          "C1-32112": "Fistula anal",
+          "C1-32113": "Gastritis",
+          "C1-32114": "Hemorroides",
+          "C1-32115": "Hepatitis",
+          "C1-32116": "Hernia de hiato",
+          "C1-32117": "Hernia inguinal/crural",
+          "C1-32118": "Hernia umbilical",
+          "C1-32119": "Pancreatitis",
+          "C1-32120": "Reflujo",
+          "C1-32121": "Eventración",
+          "C1-32122": "Úlcera gástrica",
+          "C1-32123": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-32111": "C1-4211",
+          "C1-32112": "C1-4211",
+          "C1-32113": "C1-4211",
+          "C1-32114": "C1-4211",
+          "C1-32115": "C1-4211",
+          "C1-32116": "C1-4211",
+          "C1-32117": "C1-4211",
+          "C1-32118": "C1-4211",
+          "C1-32119": "C1-4211",
+          "C1-32120": "C1-4211",
+          "C1-32121": "C1-4211",
+          "C1-32122": "C1-4211",
+          "C1-32123": "C1-4211"
+        }
+      },
+      {
+        "id": "C1-4211",
+        "text": "¿Alguna enfermedad del aparato respiratorio?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-42111": "Asma",
+          "C1-42112": "Bronquitis crónica",
+          "C1-42113": "Neumonía",
+          "C1-42114": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-42111": "C1-5211",
+          "C1-42112": "C1-5211",
+          "C1-42113": "C1-5211",
+          "C1-42114": "C1-5211"
+        }
+      },
+      {
+        "id": "C1-5211",
+        "text": "¿Alguna enfermedad del aparato urinario?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-52111": "Alteraciones próstata",
+          "C1-52112": "Cistitis",
+          "C1-52113": "Cólico renal",
+          "C1-52114": "Insuficiencia renal",
+          "C1-52115": "Pielonefritis",
+          "C1-52116": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-52111": "C1-6211",
+          "C1-52112": "C1-6211",
+          "C1-52113": "C1-6211",
+          "C1-52114": "C1-6211",
+          "C1-52115": "C1-6211",
+          "C1-52116": "C1-6211"
+        }
+      },
+      {
+        "id": "C1-6211",
+        "text": "¿Alguna enfermedad del metabolismo?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-62111": "Aumento de colesterol",
+          "C1-62112": "Aumento de trigliceridos",
+          "C1-62113": "Bocio",
+          "C1-62114": "Diabetes tipo I",
+          "C1-62115": "Diabetes tipo II",
+          "C1-62116": "Hipertiroidismo",
+          "C1-62117": "Hipotirodismo",
+          "C1-62118": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-62111": "C1-7211",
+          "C1-62112": "C1-7211",
+          "C1-62113": "C1-7211",
+          "C1-62114": "C1-7211",
+          "C1-62115": "C1-7211",
+          "C1-62116": "C1-7211",
+          "C1-62117": "C1-7211",
+          "C1-62118": "C1-7211"
+        }
+      },
+      {
+        "id": "C1-7211",
+        "text": "¿Alguna enfermedad de la sangre",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-72111": "Anemia Ferropénica",
+          "C1-72112": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-72111": "C1-8211",
+          "C1-72112": "C1-8211"
+        }
+      },
+      {
+        "id": "C1-8211",
+        "text": "¿Alguna enfermedad psicológica?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-82111": "Ansiedad",
+          "C1-82112": "Depresión",
+          "C1-82113": "Psicopatía",
+          "C1-82114": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-82111": "C1-9211",
+          "C1-82112": "C1-9211",
+          "C1-82113": "C1-9211",
+          "C1-82114": "C1-9211"
+        }
+      },
+      {
+        "id": "C1-9211",
+        "text": "¿Alguna enfermedad del sistema nervioso?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-92111": "Epilepsia",
+          "C1-92112": "Jaquecas",
+          "C1-92113": "Parálisis facial",
+          "C1-92114": "Parkinson",
+          "C1-92115": "Vértigo",
+          "C1-92116": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-92111": "C1-10211",
+          "C1-92112": "C1-10211",
+          "C1-92113": "C1-10211",
+          "C1-92114": "C1-10211",
+          "C1-92115": "C1-10211",
+          "C1-92116": "C1-10211"
+        }
+      },
+      {
+        "id": "C1-10211",
+        "text": "¿Alguna enfermedad de los órganos de los sentidos?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-102111": "Acúfenos",
+          "C1-102112": "Catarata",
+          "C1-102113": "Hipermetropía",
+          "C1-102114": "Miopía",
+          "C1-102115": "Perforación timpánica",
+          "C1-102116": "Rinitis alérgica",
+          "C1-102117": "Sinusitis",
+          "C1-102118": "Sordera",
+          "C1-102119": "Vértigo Meniere",
+          "C1-102120": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-102111": "C1-11211",
+          "C1-102112": "C1-11211",
+          "C1-102113": "C1-11211",
+          "C1-102114": "C1-11211",
+          "C1-102115": "C1-11211",
+          "C1-102116": "C1-11211",
+          "C1-102117": "C1-11211",
+          "C1-102118": "C1-11211",
+          "C1-102119": "C1-11211",
+          "C1-102120": "C1-11211"
+        }
+      },
+      {
+        "id": "C1-11211",
+        "text": "¿Alguna enfermedad reumatológica?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-112111": "Artritis",
+          "C1-112112": "Artrosis",
+          "C1-112113": "Fibromialgia",
+          "C1-112114": "Gota",
+          "C1-112115": "Osteoporosis",
+          "C1-112116": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-112111": "C1-12211",
+          "C1-112112": "C1-12211",
+          "C1-112113": "C1-12211",
+          "C1-112114": "C1-12211",
+          "C1-112115": "C1-12211",
+          "C1-112116": "C1-12211"
+        }
+      },
+      {
+        "id": "C1-12211",
+        "text": "¿Alguna de la piel?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-122111": "Acné",
+          "C1-122112": "Dermatitis alérgica",
+          "C1-122113": "Dermatitis seborreica",
+          "C1-122114": "Psoriasis",
+          "C1-122115": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-122111": "C1-13211",
+          "C1-122112": "C1-13211",
+          "C1-122113": "C1-13211",
+          "C1-122114": "C1-13211",
+          "C1-122115": "C1-13211"
+        }
+      },
+      {
+        "id": "C1-13211",
+        "text": "¿Aparato locomotor?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-132111": "Fractura extremidad superior",
+          "C1-132112": "Fractura extremidad inferior",
+          "C1-132113": "Fractura pelvis",
+          "C1-132114": "Dupuytren",
+          "C1-132115": "Hallux valgus",
+          "C1-132116": "Cifosis",
+          "C1-132117": "Escoliosis",
+          "C1-132118": "Hiperlordosis",
+          "C1-132119": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-132111": "C1-14221",
+          "C1-132112": "C1-14221",
+          "C1-132113": "C1-14221",
+          "C1-132114": "C1-14221",
+          "C1-132115": "C1-14221",
+          "C1-132116": "C1-14221",
+          "C1-132117": "C1-14221",
+          "C1-132118": "C1-14221",
+          "C1-132119": "C1-14221"
+        }
+      },
+      {
+        "id": "C1-14221",
+        "text": "¿Alguna otra no mencionada?",
+        "question_type": "free",
+        "module": "history",
+        "section": "ENFERMEDADES PASADAS",
+        "codes": {
+          "C1-132211": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C1-132211": "C2-1"
+        }
+      },
+      {
+        "id": "C2-1",
+        "text": "¿Toma alguna medicación?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-11": "Si",
+          "C2-12": "No"
+        },
+        "transitions": {
+          "C2-11": "C2-121",
+          "C2-12": "C3-1"
+        }
+      },
+      {
+        "id": "C2-121",
+        "text": "¿Para el corazón?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-1211": "Antiarrítmicos",
+          "C2-1212": "Anticoagulantes",
+          "C2-1213": "Betabloqueantes",
+          "C2-1214": "Nitratos",
+          "C2-1215": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-1211": "C2-131",
+          "C2-1212": "C2-131",
+          "C2-1213": "C2-131",
+          "C2-1214": "C2-131",
+          "C2-1215": "C2-131"
+        }
+      },
+      {
+        "id": "C2-131",
+        "text": "¿Para la tensión?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-1311": "Antihipertensivos",
+          "C2-1312": "Diuréticos",
+          "C2-1313": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-1311": "C2-141",
+          "C2-1312": "C2-141",
+          "C2-1313": "C2-141"
+        }
+      },
+      {
+        "id": "C2-141",
+        "text": "¿Para el aparato digestivo?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-1411": "Antiácidos",
+          "C2-1412": "Protectores gástricos",
+          "C2-1413": "Antidiarreicos",
+          "C2-1414": "Antiespasmódicos",
+          "C2-1415": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-1411": "C2-151",
+          "C2-1412": "C2-151",
+          "C2-1413": "C2-151",
+          "C2-1414": "C2-151",
+          "C2-1415": "C2-151"
+        }
+      },
+      {
+        "id": "C2-151",
+        "text": "¿Para el aparato respiratorio?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-1511": "Antibióticos",
+          "C2-1512": "Broncodilatadores",
+          "C2-1513": "Corticoides",
+          "C2-1514": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-1511": "C2-161",
+          "C2-1512": "C2-161",
+          "C2-1513": "C2-161",
+          "C2-1514": "C2-161"
+        }
+      },
+      {
+        "id": "C2-161",
+        "text": "¿Para el sistema genitourinario?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-1611": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-1611": "C2-171"
+        }
+      },
+      {
+        "id": "C2-171",
+        "text": "¿Para el metabolismo?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-1711": "Antidiabéticos orales",
+          "C2-1712": "Insulina",
+          "C2-1713": "Hormonas tiroideas",
+          "C2-1714": "Hipolipemiantes",
+          "C2-1715": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-1711": "C2-181",
+          "C2-1712": "C2-181",
+          "C2-1713": "C2-181",
+          "C2-1714": "C2-181",
+          "C2-1715": "C2-181"
+        }
+      },
+      {
+        "id": "C2-181",
+        "text": "¿Para enfermedades de la sangre?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-1811": "Tratamiento para anemias",
+          "C2-1812": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-1811": "C2-191",
+          "C2-1812": "C2-191"
+        }
+      },
+      {
+        "id": "C2-191",
+        "text": "¿Para las alergias?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-1911": "Antihistamínicos",
+          "C2-1912": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-1911": "C2-201",
+          "C2-1912": "C2-201"
+        }
+      },
+      {
+        "id": "C2-201",
+        "text": "¿Para los problemas reumáticos?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-2011": "Analgésicos",
+          "C2-2012": "Antiinflamatorios",
+          "C2-2013": "Corticoides",
+          "C2-2014": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-2011": "C2-211",
+          "C2-2012": "C2-211",
+          "C2-2013": "C2-211",
+          "C2-2014": "C2-211"
+        }
+      },
+      {
+        "id": "C2-211",
+        "text": "¿Para los problemas psicológicos?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-2111": "Antidepresivos",
+          "C2-2112": "Ansiolíticos",
+          "C2-2113": "Antipsicóticos",
+          "C2-2114": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-2111": "C2-221",
+          "C2-2112": "C2-221",
+          "C2-2113": "C2-221",
+          "C2-2114": "C2-221"
+        }
+      },
+      {
+        "id": "C2-221",
+        "text": "¿Para los problemas de los órganos de los sentidos?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-2211": "Antivertiginosos",
+          "C2-2212": "Tratamiento para combatir acúfenos",
+          "C2-2213": "Tratamiento pata glaucoma",
+          "C2-2214": "Tratamiento para",
+          "C2-2215": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-2211": "C2-231",
+          "C2-2212": "C2-231",
+          "C2-2213": "C2-231",
+          "C2-2214": "C2-231",
+          "C2-2215": "C2-231"
+        }
+      },
+      {
+        "id": "C2-231",
+        "text": "¿Para los problemas del sistema nervioso?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-2311": "Análgésicos",
+          "C2-2312": "Anticonvulsivos",
+          "C2-2313": "Antiparkinsonianos",
+          "C2-2314": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-2311": "C2-241",
+          "C2-2312": "C2-241",
+          "C2-2313": "C2-241",
+          "C2-2314": "C2-241"
+        }
+      },
+      {
+        "id": "C2-241",
+        "text": "¿Para otras enfermedades no descritas?",
+        "question_type": "free",
+        "module": "history",
+        "section": "TRATAMIENTOS ACTUALES",
+        "codes": {
+          "C2-2411": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C2-2411": "C3-1"
+        }
+      },
+      {
+        "id": "C3-1",
+        "text": "¿Le han operado de algo hasta la fecha?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "INTERVENCIONES QUIRÚRGICAS",
+        "codes": {
+          "C3-11": "Si",
+          "C3-12": "No"
+        },
+        "transitions": {
+          "C3-11": "C3-121",
+          "C3-12": "C4-1"
+        }
+      },
+      {
+        "id": "C3-121",
+        "text": "¿Qué operaciones ha tenido?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "INTERVENCIONES QUIRÚRGICAS",
+        "codes": {
+          "C3-1211": "Abdomen agudo",
+          "C3-1212": "Amigdalas",
+          "C3-1213": "Apendicitis",
+          "C3-1214": "Caderas",
+          "C3-1215": "Cardiaca: Ablación",
+          "C3-1216": "Cardiaca: By pass",
+          "C3-1217": "Fractura de cadera",
+          "C3-1218": "Fractura de extremidad inferior",
+          "C3-1219": "Fractura de extremidad superior",
+          "C3-1220": "Fractura de pelvis",
+          "C3-1221": "Hallux valgus (Juanetes)",
+          "C3-1222": "Hernia de hiato",
+          "C3-1223": "Hernia discal",
+          "C3-1224": "Hernia inguinal",
+          "C3-1225": "Hernia umbilical",
+          "C3-1226": "Nefrectomía",
+          "C3-1227": "Prostatectomía",
+          "C3-1228": "Prótesis de cadera",
+          "C3-1229": "Varices",
+          "C3-1230": "Vesícula (Colecistectomía)",
+          "C3-1231": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C3-1211": "C4-1",
+          "C3-1212": "C4-1",
+          "C3-1213": "C4-1",
+          "C3-1214": "C4-1",
+          "C3-1215": "C4-1",
+          "C3-1216": "C4-1",
+          "C3-1217": "C4-1",
+          "C3-1218": "C4-1",
+          "C3-1219": "C4-1",
+          "C3-1220": "C4-1",
+          "C3-1221": "C4-1",
+          "C3-1222": "C4-1",
+          "C3-1223": "C4-1",
+          "C3-1224": "C4-1",
+          "C3-1225": "C4-1",
+          "C3-1226": "C4-1",
+          "C3-1227": "C4-1",
+          "C3-1228": "C4-1",
+          "C3-1229": "C4-1",
+          "C3-1230": "C4-1",
+          "C3-1231": "C4-1"
+        }
+      },
+      {
+        "id": "C4-1",
+        "text": "¿Ha estado embarazada alguna vez?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-11": "Si",
+          "C4-12": "No"
+        },
+        "transitions": {
+          "C4-11": "C4-121",
+          "C4-12": "C4-2"
+        }
+      },
+      {
+        "id": "C4-121",
+        "text": "¿Está embarazada actualmente?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-1211": "Si",
+          "C4-1212": "No"
+        },
+        "transitions": {
+          "C4-1211": "C4-131",
+          "C4-1212": "C4-131"
+        }
+      },
+      {
+        "id": "C4-131",
+        "text": "¿Cuántos embarazos ha tenido?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-1311": "1",
+          "C4-1312": "2",
+          "C4-1313": "3",
+          "C4-1314": "4",
+          "C4-1315": "5",
+          "C4-1316": "6",
+          "C4-1317": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C4-1311": "C4-141",
+          "C4-1312": "C4-141",
+          "C4-1313": "C4-141",
+          "C4-1314": "C4-141",
+          "C4-1315": "C4-141",
+          "C4-1316": "C4-141",
+          "C4-1317": "C4-141"
+        }
+      },
+      {
+        "id": "C4-141",
+        "text": "¿Cuántos de los embarazos han llegado a término?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-1411": "1",
+          "C4-1412": "2",
+          "C4-1413": "3",
+          "C4-1414": "4",
+          "C4-1415": "5",
+          "C4-1416": "6",
+          "C4-1417": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C4-1411": "C4-151",
+          "C4-1412": "C4-151",
+          "C4-1413": "C4-151",
+          "C4-1414": "C4-151",
+          "C4-1415": "C4-151",
+          "C4-1416": "C4-151",
+          "C4-1417": "C4-151"
+        }
+      },
+      {
+        "id": "C4-151",
+        "text": "¿Cuántos de los partos han sido con cesárea?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-1511": "1",
+          "C4-1512": "2",
+          "C4-1513": "3",
+          "C4-1514": "4",
+          "C4-1515": "5",
+          "C4-1516": "6",
+          "C4-1517": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C4-1511": "C4-161",
+          "C4-1512": "C4-161",
+          "C4-1513": "C4-161",
+          "C4-1514": "C4-161",
+          "C4-1515": "C4-161",
+          "C4-1516": "C4-161",
+          "C4-1517": "C4-161"
+        }
+      },
+      {
+        "id": "C4-161",
+        "text": "¿Cuántos partos han sido normales?",
+        "question_type": "free",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-1611": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C4-1611": "C4-2"
+        }
+      },
+      {
+        "id": "C4-2",
+        "text": "¿Ha tenido o tiene alguna enfermedad ginecológica?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-21": "Si",
+          "C4-22": "No"
+        },
+        "transitions": {
+          "C4-21": "C4-221",
+          "C4-22": "C4-3"
+        }
+      },
+      {
+        "id": "C4-221",
+        "text": "¿Cuál de estas enfermedades ha tenido?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-2211": "Endometriosis",
+          "C4-2212": "Enfermedad de trasmisión sexual",
+          "C4-2213": "Mioma",
+          "C4-2214": "Ovarios poliquísticos",
+          "C4-2215": "Papiloma Virus",
+          "C4-2216": "Prolapso uterino",
+          "C4-2217": "Quiste mamario",
+          "C4-2218": "Quistes",
+          "C4-2219": "Tumor maligno de mama",
+          "C4-2220": "Tumor maligno de ovarios",
+          "C4-2221": "Tumor maligno de útero",
+          "C4-2222": "Tumor maligno de vagina",
+          "C4-2223": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C4-2211": "C4-3",
+          "C4-2212": "C4-3",
+          "C4-2213": "C4-3",
+          "C4-2214": "C4-3",
+          "C4-2215": "C4-3",
+          "C4-2216": "C4-3",
+          "C4-2217": "C4-3",
+          "C4-2218": "C4-3",
+          "C4-2219": "C4-3",
+          "C4-2220": "C4-3",
+          "C4-2221": "C4-3",
+          "C4-2222": "C4-3",
+          "C4-2223": "C4-3"
+        }
+      },
+      {
+        "id": "C4-3",
+        "text": "¿Toma alguna medicación?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-31": "Si",
+          "C4-32": "No"
+        },
+        "transitions": {
+          "C4-31": "C4-321",
+          "C4-32": "C4-4"
+        }
+      },
+      {
+        "id": "C4-321",
+        "text": "¿Cuál de estas medicaciones toma?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-3211": "Anovulatorios",
+          "C4-3212": "Tratamiento hormonal sustitutivo",
+          "C4-3213": "Calcio y Vitamina D",
+          "C4-3214": "Antiinfecciosos",
+          "C4-3215": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C4-3211": "C4-4",
+          "C4-3212": "C4-4",
+          "C4-3213": "C4-4",
+          "C4-3214": "C4-4",
+          "C4-3215": "C4-4"
+        }
+      },
+      {
+        "id": "C4-4",
+        "text": "¿Le han operado de algo hasta la fecha?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-41": "Si",
+          "C4-42": "No"
+        },
+        "transitions": {
+          "C4-41": "C4-421",
+          "C4-42": "C5-1"
+        }
+      },
+      {
+        "id": "C4-421",
+        "text": "¿Qué operaciones ha tenido?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ANTECEDENTES GINECOLÓGICOS",
+        "codes": {
+          "C4-4211": "Anexectomía",
+          "C4-4212": "Endometriosis",
+          "C4-4213": "Histerectomía",
+          "C4-4214": "Incontinencia urinaria",
+          "C4-4215": "Mioma",
+          "C4-4216": "Ofarectomía",
+          "C4-4217": "Ovarios poliquísticos",
+          "C4-4218": "Prolapso",
+          "C4-4219": "Quiste de mama",
+          "C4-4220": "Quistes",
+          "C4-4221": "Tumor de mama",
+          "C4-4222": "Tumor maligno de ovarios",
+          "C4-4223": "Tumor maligno de útero",
+          "C4-4224": "Tumor maligno de vagina",
+          "C4-4225": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C4-4211": "C5-1",
+          "C4-4212": "C5-1",
+          "C4-4213": "C5-1",
+          "C4-4214": "C5-1",
+          "C4-4215": "C5-1",
+          "C4-4216": "C5-1",
+          "C4-4217": "C5-1",
+          "C4-4218": "C5-1",
+          "C4-4219": "C5-1",
+          "C4-4220": "C5-1",
+          "C4-4221": "C5-1",
+          "C4-4222": "C5-1",
+          "C4-4223": "C5-1",
+          "C4-4224": "C5-1",
+          "C4-4225": "C5-1"
+        }
+      },
+      {
+        "id": "C5-1",
+        "text": "¿Fuma?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "HÁBITOS",
+        "codes": {
+          "C5-11": "Si",
+          "C5-12": "No"
+        },
+        "transitions": {
+          "C5-11": "C5-131",
+          "C5-12": "C5-121"
+        }
+      },
+      {
+        "id": "C5-121",
+        "text": "¿Ha fumado anteriormente?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "HÁBITOS",
+        "codes": {
+          "C5-1211": "Si",
+          "C5-1212": "No"
+        },
+        "transitions": {
+          "C5-1211": "C5-2",
+          "C5-1212": "C5-2"
+        }
+      },
+      {
+        "id": "C5-131",
+        "text": "¿Cuánto tabaco consume?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "HÁBITOS",
+        "codes": {
+          "C5-1311": "Esporádico",
+          "C5-1312": "< 5",
+          "C5-1313": "6 a 10",
+          "C5-1314": "11 a 15",
+          "C5-1315": "16 a 20",
+          "C5-1316": ">20"
+        },
+        "transitions": {
+          "C5-1311": "C5-2",
+          "C5-1312": "C5-2",
+          "C5-1313": "C5-2",
+          "C5-1314": "C5-2",
+          "C5-1315": "C5-2",
+          "C5-1316": "C5-2"
+        }
+      },
+      {
+        "id": "C5-2",
+        "text": "¿Consume bebidas alcohólicas?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "HÁBITOS",
+        "codes": {
+          "C5-21": "Si",
+          "C5-22": "No"
+        },
+        "transitions": {
+          "C5-21": "C5-231",
+          "C5-22": "C5-221"
+        }
+      },
+      {
+        "id": "C5-221",
+        "text": "¿Ha consumido anteriormente?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "HÁBITOS",
+        "codes": {
+          "C5-2211": "Si",
+          "C5-2212": "No"
+        },
+        "transitions": {
+          "C5-2211": "C5-3",
+          "C5-2212": "C5-3"
+        }
+      },
+      {
+        "id": "C5-231",
+        "text": "¿Cuántas unidades consume?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "HÁBITOS",
+        "codes": {
+          "C5-2311": "De vez en cuando",
+          "C5-2312": "1 a 7 y sexo mujer",
+          "C5-2313": "1 a 14 y sexo hombre",
+          "C5-2314": "> 7 y sexo mujer",
+          "C5-2315": "> 14 y sexo hombre"
+        },
+        "transitions": {
+          "C5-2311": "C5-3",
+          "C5-2312": "C5-3",
+          "C5-2313": "C5-3",
+          "C5-2314": "C5-3",
+          "C5-2315": "C5-3"
+        }
+      },
+      {
+        "id": "C5-3",
+        "text": "¿Consume algún otro estupefaciente?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "HÁBITOS",
+        "codes": {
+          "C5-31": "Si",
+          "C5-32": "No"
+        },
+        "transitions": {
+          "C5-31": "C5-331",
+          "C5-32": "C5-321"
+        }
+      },
+      {
+        "id": "C5-321",
+        "text": "¿Ha consumido anteriormente?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "HÁBITOS",
+        "codes": {
+          "C5-3211": "Si",
+          "C5-3212": "No"
+        },
+        "transitions": {
+          "C5-3211": "C6-1",
+          "C5-3212": "C6-1"
+        }
+      },
+      {
+        "id": "C5-331",
+        "text": "¿Cuál consume?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "HÁBITOS",
+        "codes": {
+          "C5-3311": "Opiáceos",
+          "C5-3312": "Cannabis",
+          "C5-3313": "Cocaina",
+          "C5-3314": "Barbitúricos",
+          "C5-3315": "Alucinógenos",
+          "C5-3316": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C5-3311": "C6-1",
+          "C5-3312": "C6-1",
+          "C5-3313": "C6-1",
+          "C5-3314": "C6-1",
+          "C5-3315": "C6-1",
+          "C5-3316": "C6-1"
+        }
+      },
+      {
+        "id": "C6-1",
+        "text": "¿Tiene Ud alguna alergia?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ALERGIAS",
+        "codes": {
+          "C6-11": "Si",
+          "C6-12": "No"
+        },
+        "transitions": {
+          "C6-11": "C6-121",
+          "C6-12": "C7-1"
+        }
+      },
+      {
+        "id": "C6-121",
+        "text": "¿A alimentos?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ALERGIAS",
+        "codes": {
+          "C6-1211": "Fruta",
+          "C6-1212": "Frutos secos",
+          "C6-1213": "Huevos",
+          "C6-1214": "Lácteos",
+          "C6-1215": "Legumbre",
+          "C6-1216": "Marisco",
+          "C6-1217": "Pescado",
+          "C6-1218": "Soja",
+          "C6-1219": "No recuerda",
+          "C6-1220": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C6-1211": "C6-131",
+          "C6-1212": "C6-131",
+          "C6-1213": "C6-131",
+          "C6-1214": "C6-131",
+          "C6-1215": "C6-131",
+          "C6-1216": "C6-131",
+          "C6-1217": "C6-131",
+          "C6-1218": "C6-131",
+          "C6-1219": "C6-131",
+          "C6-1220": "C6-131"
+        }
+      },
+      {
+        "id": "C6-131",
+        "text": "¿A analgésicos?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ALERGIAS",
+        "codes": {
+          "C6-1311": "Paracetamol",
+          "C6-1312": "Ibuprofeno",
+          "C6-1313": "No recuerda",
+          "C6-1314": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C6-1311": "C6-141",
+          "C6-1312": "C6-141",
+          "C6-1313": "C6-141",
+          "C6-1314": "C6-141"
+        }
+      },
+      {
+        "id": "C6-141",
+        "text": "¿Antibióticos?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "ALERGIAS",
+        "codes": {
+          "C6-1411": "Derivados penicilina",
+          "C6-1412": "Derivados de macrolidos",
+          "C6-1413": "Derivados de sulfamidas",
+          "C6-1414": "Derivados de quinolonas",
+          "C6-1415": "Derivados de cefalosporinas",
+          "C6-1416": "Derivados de tetracicilinas",
+          "C6-1417": "Derivados de otros antibióticos",
+          "C6-1418": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C6-1411": "C6-151",
+          "C6-1412": "C6-151",
+          "C6-1413": "C6-151",
+          "C6-1414": "C6-151",
+          "C6-1415": "C6-151",
+          "C6-1416": "C6-151",
+          "C6-1417": "C6-151",
+          "C6-1418": "C6-151"
+        }
+      },
+      {
+        "id": "C6-151",
+        "text": "¿A otros?",
+        "question_type": "free",
+        "module": "history",
+        "section": "ALERGIAS",
+        "codes": {
+          "C6-1511": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C6-1511": "C7-1"
+        }
+      },
+      {
+        "id": "C7-1",
+        "text": "¿De pequeño le vacunaron?",
+        "question_type": "yesnoremember",
+        "module": "history",
+        "section": "INMUNIZACIONES",
+        "codes": {
+          "C7-11": "Si",
+          "C7-12": "No",
+          "C7-13": "No recuerda"
+        },
+        "transitions": {
+          "C7-11": "C7-2",
+          "C7-12": "C7-2",
+          "C7-13": "C7-2"
+        }
+      },
+      {
+        "id": "C7-2",
+        "text": "¿Se ha vuelto posteriormente a vacunar de Tetános?",
+        "question_type": "yesnoremember",
+        "module": "history",
+        "section": "INMUNIZACIONES",
+        "codes": {
+          "C7-21": "Si",
+          "C7-22": "No",
+          "C7-23": "No recuerda"
+        },
+        "transitions": {
+          "C7-21": "C7-211",
+          "C7-22": "C7-3",
+          "C7-23": "C7-3"
+        }
+      },
+      {
+        "id": "C7-211",
+        "text": "¿Recuerda cuando?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "INMUNIZACIONES",
+        "codes": {
+          "C7-72111": "Más de 10 años",
+          "C7-72112": "Menos de 10 años"
+        },
+        "transitions": {
+          "C7-72111": "C7-3",
+          "C7-72112": "C7-3"
+        }
+      },
+      {
+        "id": "C7-3",
+        "text": "¿Se ha vuelto posteriormente a vacunar de Hepatitis B?",
+        "question_type": "yesnoremember",
+        "module": "history",
+        "section": "INMUNIZACIONES",
+        "codes": {
+          "C7-31": "Si",
+          "C7-32": "No",
+          "C7-33": "No recuerda"
+        },
+        "transitions": {
+          "C7-31": "C7-321",
+          "C7-32": "C7-4",
+          "C7-33": "C7-4"
+        }
+      },
+      {
+        "id": "C7-321",
+        "text": "¿Recuerda cuando?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "INMUNIZACIONES",
+        "codes": {
+          "C7-3111": "Más de 20 años",
+          "C7-3112": "Menos de 20 años"
+        },
+        "transitions": {
+          "C7-3111": "C7-4",
+          "C7-3112": "C7-4"
+        }
+      },
+      {
+        "id": "C7-4",
+        "text": "¿Recuerda alguna otra vacuna?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "INMUNIZACIONES",
+        "codes": {
+          "C7-41": "Si",
+          "C7-42": "No"
+        },
+        "transitions": {
+          "C7-41": "C7-411",
+          "C7-42": "C8-1"
+        }
+      },
+      {
+        "id": "C7-411",
+        "text": "¿Cuál o cuáles?",
+        "question_type": "multiple",
+        "module": "history",
+        "section": "INMUNIZACIONES",
+        "codes": {
+          "C7-4111": "Papiloma Virus",
+          "C7-4112": "Herpes",
+          "C7-4113": "Covid",
+          "C7-4114": "Neumococo",
+          "C7-4115": "Fiebre amarilla",
+          "C7-4116": "Tifoideas",
+          "C7-4117": "Cólera",
+          "C7-4118": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "C7-4111": "C8-1",
+          "C7-4112": "C8-1",
+          "C7-4113": "C8-1",
+          "C7-4114": "C8-1",
+          "C7-4115": "C8-1",
+          "C7-4116": "C8-1",
+          "C7-4117": "C8-1",
+          "C7-4118": "C8-1"
+        }
+      },
+      {
+        "id": "C8-1",
+        "text": "¿Realiza alguna actividad física?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ACTIVIDAD FÍSICA",
+        "codes": {
+          "C8-11": "Si",
+          "C8-12": "No"
+        },
+        "transitions": {
+          "C8-11": "C8-121",
+          "C8-12": "D1-1"
+        }
+      },
+      {
+        "id": "C8-121",
+        "text": "¿Practica algún deporte a diario (incluye gimnasio)?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ACTIVIDAD FÍSICA",
+        "codes": {
+          "C8-1211": "Si",
+          "C8-1212": "No"
+        },
+        "transitions": {
+          "C8-1211": "C8-122",
+          "C8-1212": "C8-122"
+        }
+      },
+      {
+        "id": "C8-122",
+        "text": "¿Practica algún deporte semanalmente (incluye gimnasio)?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ACTIVIDAD FÍSICA",
+        "codes": {
+          "C8-1221": "Si",
+          "C8-1222": "No"
+        },
+        "transitions": {
+          "C8-1221": "C8-123",
+          "C8-1222": "C8-123"
+        }
+      },
+      {
+        "id": "C8-123",
+        "text": "¿Practica algún deporte de vez en cuando (incluye gimnasio)?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ACTIVIDAD FÍSICA",
+        "codes": {
+          "C8-1231": "Si",
+          "C8-1232": "No"
+        },
+        "transitions": {
+          "C8-1231": "D1-1",
+          "C8-1232": "D1-1"
+        }
+      },
+      {
+        "id": "D1-1",
+        "text": "¿Trabaja con pantallas?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-11": "Si",
+          "D1-12": "No"
+        },
+        "transitions": {
+          "D1-11": "D1-121",
+          "D1-12": "D1-2"
+        }
+      },
+      {
+        "id": "D1-121",
+        "text": "¿Tiene deslumbramientos?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-1211": "Frecuentes",
+          "D1-1212": "A veces",
+          "D1-1213": "Raramente",
+          "D1-1214": "Nunca",
+          "D1-1215": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-1211": "D1-131",
+          "D1-1212": "D1-131",
+          "D1-1213": "D1-131",
+          "D1-1214": "D1-131",
+          "D1-1215": "D1-131"
+        }
+      },
+      {
+        "id": "D1-131",
+        "text": "¿Tiene picores de ojos?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-1311": "Frecuentes",
+          "D1-1312": "A veces",
+          "D1-1313": "Raramente",
+          "D1-1314": "Nunca",
+          "D1-1315": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-1311": "D1-141",
+          "D1-1312": "D1-141",
+          "D1-1313": "D1-141",
+          "D1-1314": "D1-141",
+          "D1-1315": "D1-141"
+        }
+      },
+      {
+        "id": "D1-141",
+        "text": "¿Tiene quemazón de ojos?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-1411": "Frecuentes",
+          "D1-1412": "A veces",
+          "D1-1413": "Raramente",
+          "D1-1414": "Nunca",
+          "D1-1415": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-1411": "D1-151",
+          "D1-1412": "D1-151",
+          "D1-1413": "D1-151",
+          "D1-1414": "D1-151",
+          "D1-1415": "D1-151"
+        }
+      },
+      {
+        "id": "D1-151",
+        "text": "¿Tiene dolores de cabeza?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-1511": "Frecuentes",
+          "D1-1512": "A veces",
+          "D1-1513": "Raramente",
+          "D1-1514": "Nunca",
+          "D1-1515": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-1511": "D1-2",
+          "D1-1512": "D1-2",
+          "D1-1513": "D1-2",
+          "D1-1514": "D1-2",
+          "D1-1515": "D1-2"
+        }
+      },
+      {
+        "id": "D1-2",
+        "text": "¿Trabaja con ruido elevado?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-21": "Si",
+          "D1-22": "No"
+        },
+        "transitions": {
+          "D1-21": "D1-221",
+          "D1-22": "D1-3"
+        }
+      },
+      {
+        "id": "D1-221",
+        "text": "¿Tiene dificultad para oir cuando conversa en grupo?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-2211": "Frecuentemente",
+          "D1-2212": "A veces",
+          "D1-2213": "Raramente",
+          "D1-2214": "Nunca",
+          "D1-2215": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-2211": "D1-222",
+          "D1-2212": "D1-222",
+          "D1-2213": "D1-222",
+          "D1-2214": "D1-222",
+          "D1-2215": "D1-222"
+        }
+      },
+      {
+        "id": "D1-222",
+        "text": "¿Tiene que subir el volumen de TV o radio para oir bien?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-2221": "Frecuentemente",
+          "D1-2222": "A veces",
+          "D1-2223": "Raramente",
+          "D1-2224": "Nunca",
+          "D1-2225": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-2221": "D1-223",
+          "D1-2222": "D1-223",
+          "D1-2223": "D1-223",
+          "D1-2224": "D1-223",
+          "D1-2225": "D1-223"
+        }
+      },
+      {
+        "id": "D1-223",
+        "text": "¿Nota ruido en los oidos?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-2231": "Frecuentemente",
+          "D1-2232": "A veces",
+          "D1-2233": "Raramente",
+          "D1-2234": "Nunca",
+          "D1-2235": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-2231": "D1-224",
+          "D1-2232": "D1-224",
+          "D1-2233": "D1-224",
+          "D1-2234": "D1-224",
+          "D1-2235": "D1-224"
+        }
+      },
+      {
+        "id": "D1-224",
+        "text": "¿Nota dolor en los oidos?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-2241": "Frecuentemente",
+          "D1-2242": "A veces",
+          "D1-2243": "Raramente",
+          "D1-2244": "Nunca",
+          "D1-2245": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-2241": "D1-225",
+          "D1-2242": "D1-225",
+          "D1-2243": "D1-225",
+          "D1-2244": "D1-225",
+          "D1-2245": "D1-225"
+        }
+      },
+      {
+        "id": "D1-225",
+        "text": "¿Nota mareo?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-2251": "Frecuentemente",
+          "D1-2252": "A veces",
+          "D1-2253": "Raramente",
+          "D1-2254": "Nunca",
+          "D1-2255": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-2251": "D1-3",
+          "D1-2252": "D1-3",
+          "D1-2253": "D1-3",
+          "D1-2254": "D1-3",
+          "D1-2255": "D1-3"
+        }
+      },
+      {
+        "id": "D1-3",
+        "text": "¿Trabaja con vibraciones?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-31": "Si",
+          "D1-32": "No"
+        },
+        "transitions": {
+          "D1-31": "D1-321",
+          "D1-32": "D1-4"
+        }
+      },
+      {
+        "id": "D1-321",
+        "text": "¿Nota hormigueos en manos?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-3211": "Frecuentemente",
+          "D1-3212": "A veces",
+          "D1-3213": "Raramente",
+          "D1-3214": "Nunca",
+          "D1-3215": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-3211": "D1-322",
+          "D1-3212": "D1-322",
+          "D1-3213": "D1-322",
+          "D1-3214": "D1-322",
+          "D1-3215": "D1-322"
+        }
+      },
+      {
+        "id": "D1-322",
+        "text": "¿Nota falta de sensibilidad en manos?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-3221": "Frecuentemente",
+          "D1-3222": "A veces",
+          "D1-3223": "Raramente",
+          "D1-3224": "Nunca",
+          "D1-3225": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-3221": "D1-323",
+          "D1-3222": "D1-323",
+          "D1-3223": "D1-323",
+          "D1-3224": "D1-323",
+          "D1-3225": "D1-323"
+        }
+      },
+      {
+        "id": "D1-323",
+        "text": "¿Nota falta dolores articulares?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-3231": "Frecuentemente",
+          "D1-3232": "A veces",
+          "D1-3233": "Raramente",
+          "D1-3234": "Nunca",
+          "D1-3235": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-3231": "D1-324",
+          "D1-3232": "D1-324",
+          "D1-3233": "D1-324",
+          "D1-3234": "D1-324",
+          "D1-3235": "D1-324"
+        }
+      },
+      {
+        "id": "D1-324",
+        "text": "¿Nota falta cambio de color de los dedos ?",
+        "question_type": "choice",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-3241": "Frecuentemente",
+          "D1-3242": "A veces",
+          "D1-3243": "Raramente",
+          "D1-3244": "Nunca",
+          "D1-3245": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-3241": "D1-4",
+          "D1-3242": "D1-4",
+          "D1-3243": "D1-4",
+          "D1-3244": "D1-4",
+          "D1-3245": "D1-4"
+        }
+      },
+      {
+        "id": "D1-4",
+        "text": "¿Trabaja con químicos?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-41": "Si",
+          "D1-42": "No"
+        },
+        "transitions": {
+          "D1-41": "D1-421",
+          "D1-42": null
+        }
+      },
+      {
+        "id": "D1-421",
+        "text": "¿Tiene vómitos habitualmente?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-4211": "Si",
+          "D1-4212": "No"
+        },
+        "transitions": {
+          "D1-4211": "D1-422",
+          "D1-4212": "D1-422"
+        }
+      },
+      {
+        "id": "D1-422",
+        "text": "¿Tiene diarreas habitualmente?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-4221": "Si",
+          "D1-4222": "No"
+        },
+        "transitions": {
+          "D1-4221": "D1-423",
+          "D1-4222": "D1-423"
+        }
+      },
+      {
+        "id": "D1-423",
+        "text": "¿Tiene dolor abdominal?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-4231": "Si",
+          "D1-4232": "No"
+        },
+        "transitions": {
+          "D1-4231": "D1-424",
+          "D1-4232": "D1-424"
+        }
+      },
+      {
+        "id": "D1-424",
+        "text": "¿Tiene síntomas urizarios:escozor, frecuentes ganas de orinar?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-4241": "Si",
+          "D1-4242": "No"
+        },
+        "transitions": {
+          "D1-4241": "D1-425",
+          "D1-4242": "D1-425"
+        }
+      },
+      {
+        "id": "D1-425",
+        "text": "¿Tiene dificultad para respirar?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-4251": "Si",
+          "D1-4252": "No"
+        },
+        "transitions": {
+          "D1-4251": "D1-426",
+          "D1-4252": "D1-426"
+        }
+      },
+      {
+        "id": "D1-426",
+        "text": "¿Tiene dolor torácico?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-4261": "Si",
+          "D1-4262": "No"
+        },
+        "transitions": {
+          "D1-4261": "D1-427",
+          "D1-4262": "D1-427"
+        }
+      },
+      {
+        "id": "D1-427",
+        "text": "¿Tiene manchas en la piel?",
+        "question_type": "yesno",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-4271": "Si",
+          "D1-4272": "No"
+        },
+        "transitions": {
+          "D1-4271": "D1-428",
+          "D1-4272": "D1-428"
+        }
+      },
+      {
+        "id": "D1-428",
+        "text": "¿Otros?",
+        "question_type": "free",
+        "module": "history",
+        "section": "ANAMNÉSIS",
+        "codes": {
+          "D1-4281": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "D1-4281": null
+        }
+      }
+    ]
+  },
+  "exam": {
+    "entry_question_id": "E1-1",
+    "questions": [
+      {
+        "id": "E1-1",
+        "text": "¿La inspección de cuero cabelludo es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-11": "Si",
+          "E1-12": "No"
+        },
+        "transitions": {
+          "E1-11": "E1-2",
+          "E1-12": "E1-121"
+        }
+      },
+      {
+        "id": "E1-121",
+        "text": "¿Qué se detecta?",
+        "question_type": "free",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-1111": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E1-1111": "E1-2"
+        }
+      },
+      {
+        "id": "E1-2",
+        "text": "¿La exploración de la cara es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-21": "Si",
+          "E1-22": "No"
+        },
+        "transitions": {
+          "E1-21": "E1-3",
+          "E1-22": "E1-221"
+        }
+      },
+      {
+        "id": "E1-221",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-2211": "Acné",
+          "E1-2212": "Dermatitis seborreica",
+          "E1-2213": "Ezcema",
+          "E1-2214": "Hipertrofia parotídea",
+          "E1-2215": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E1-2211": "E1-3",
+          "E1-2212": "E1-3",
+          "E1-2213": "E1-3",
+          "E1-2214": "E1-3",
+          "E1-2215": "E1-3"
+        }
+      },
+      {
+        "id": "E1-3",
+        "text": "¿La exploración de la boca es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-31": "Si",
+          "E1-32": "No"
+        },
+        "transitions": {
+          "E1-31": "E1-4",
+          "E1-32": "E1-321"
+        }
+      },
+      {
+        "id": "E1-321",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-3211": "Caries",
+          "E1-3212": "Deformación",
+          "E1-3213": "Inflamación de amigdalas",
+          "E1-3214": "Inflamación de la encía",
+          "E1-3215": "Lesión en lengua",
+          "E1-3216": "Piorrea",
+          "E1-3217": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E1-3211": "E1-4",
+          "E1-3212": "E1-4",
+          "E1-3213": "E1-4",
+          "E1-3214": "E1-4",
+          "E1-3215": "E1-4",
+          "E1-3216": "E1-4",
+          "E1-3217": "E1-4"
+        }
+      },
+      {
+        "id": "E1-4",
+        "text": "¿La exploración del oido es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-41": "Si",
+          "E1-42": "No"
+        },
+        "transitions": {
+          "E1-41": "E1-5",
+          "E1-42": "E1-421"
+        }
+      },
+      {
+        "id": "E1-421",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-4211": "Eczema ambos oídos",
+          "E1-4212": "Ezcema oído dcho",
+          "E1-4213": "Ezcema oído izdo",
+          "E1-4214": "Perforación ambos timpanos",
+          "E1-4215": "Perforación timpano dcha",
+          "E1-4216": "Perforación timpano izdo",
+          "E1-4217": "Placas calcáreas ambos oídos",
+          "E1-4218": "Placas calcáreas oído dcho",
+          "E1-4219": "Placas calcáreas oído izdo",
+          "E1-4220": "Rinne - bilateral",
+          "E1-4221": "Rinne - oído dcho",
+          "E1-4222": "Rinne - oído izdo",
+          "E1-4223": "Rinne + bilateral",
+          "E1-4224": "Rinne + oído dcho",
+          "E1-4225": "Rinne + oído izdo",
+          "E1-4226": "Tapón cerumen bilateral",
+          "E1-4227": "Tapón de cerumen dcho",
+          "E1-4228": "Tapón de cerumen izdo",
+          "E1-4229": "Weber bilateral",
+          "E1-4230": "Weber dcho",
+          "E1-4231": "Weber izdo",
+          "E1-4232": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E1-4211": "E1-5",
+          "E1-4212": "E1-5",
+          "E1-4213": "E1-5",
+          "E1-4214": "E1-5",
+          "E1-4215": "E1-5",
+          "E1-4216": "E1-5",
+          "E1-4217": "E1-5",
+          "E1-4218": "E1-5",
+          "E1-4219": "E1-5",
+          "E1-4220": "E1-5",
+          "E1-4221": "E1-5",
+          "E1-4222": "E1-5",
+          "E1-4223": "E1-5",
+          "E1-4224": "E1-5",
+          "E1-4225": "E1-5",
+          "E1-4226": "E1-5",
+          "E1-4227": "E1-5",
+          "E1-4228": "E1-5",
+          "E1-4229": "E1-5",
+          "E1-4230": "E1-5",
+          "E1-4231": "E1-5",
+          "E1-4232": "E1-5"
+        }
+      },
+      {
+        "id": "E1-5",
+        "text": "¿La exploración de los ojos es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-51": "Si",
+          "E1-52": "No"
+        },
+        "transitions": {
+          "E1-51": "E1-6",
+          "E1-52": "E1-521"
+        }
+      },
+      {
+        "id": "E1-521",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-5211": "Blefaritis bilateral",
+          "E1-5212": "Blefaritis ojo dcho.",
+          "E1-5213": "Blefaritis ojo izdo.",
+          "E1-5214": "Catarata bilateral",
+          "E1-5215": "Catarata ojo dcho",
+          "E1-5216": "Catarata ojo izdo",
+          "E1-5217": "Conjuntivitis bilateral",
+          "E1-5218": "Conjuntivitis ojo dcho",
+          "E1-5219": "Conjuntivitis ojo izdo",
+          "E1-5220": "Ictericia subconjuntival bilateral",
+          "E1-5221": "Ictericia subconjuntival ojo dcho",
+          "E1-5222": "Ictericia subconjuntival ojo izdo",
+          "E1-5223": "Orzuelo bilateral",
+          "E1-5224": "Orzuelo ojo dcho.",
+          "E1-5225": "Orzuelo ojo izdo.",
+          "E1-5226": "Xantelasma bilateral",
+          "E1-5227": "Xantelasma ojo dcho",
+          "E1-5228": "Xantelasma ojo izdo",
+          "E1-5229": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E1-5211": "E1-6",
+          "E1-5212": "E1-6",
+          "E1-5213": "E1-6",
+          "E1-5214": "E1-6",
+          "E1-5215": "E1-6",
+          "E1-5216": "E1-6",
+          "E1-5217": "E1-6",
+          "E1-5218": "E1-6",
+          "E1-5219": "E1-6",
+          "E1-5220": "E1-6",
+          "E1-5221": "E1-6",
+          "E1-5222": "E1-6",
+          "E1-5223": "E1-6",
+          "E1-5224": "E1-6",
+          "E1-5225": "E1-6",
+          "E1-5226": "E1-6",
+          "E1-5227": "E1-6",
+          "E1-5228": "E1-6",
+          "E1-5229": "E1-6"
+        }
+      },
+      {
+        "id": "E1-6",
+        "text": "¿La exploración de la nariz es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-61": "Si",
+          "E1-62": "No"
+        },
+        "transitions": {
+          "E1-61": "E2-1",
+          "E1-62": "E1-621"
+        }
+      },
+      {
+        "id": "E1-621",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "CABEZA",
+        "codes": {
+          "E1-6211": "Atrofia de cornetes",
+          "E1-6212": "Costras nasales",
+          "E1-6213": "Desviación de tabique nasal",
+          "E1-6214": "Hipertrofia de cornetes",
+          "E1-6215": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E1-6211": "E2-1",
+          "E1-6212": "E2-1",
+          "E1-6213": "E2-1",
+          "E1-6214": "E2-1",
+          "E1-6215": "E2-1"
+        }
+      },
+      {
+        "id": "E2-1",
+        "text": "¿La exploración del cuello es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "CUELLO",
+        "codes": {
+          "E2-11": "Si",
+          "E2-12": "No"
+        },
+        "transitions": {
+          "E2-11": "E3-1",
+          "E2-12": "E2-121"
+        }
+      },
+      {
+        "id": "E2-121",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "CUELLO",
+        "codes": {
+          "E2-1211": "Adenopatías cervicales",
+          "E2-1212": "Bocio",
+          "E2-1213": "Ingurgitación yugular dcha",
+          "E2-1214": "Ingurgitación yugular izda",
+          "E2-1215": "Pulso carotídeo dcho disminuido",
+          "E2-1216": "Pulso carotídeo izdo disminuido",
+          "E2-1217": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E2-1211": "E3-1",
+          "E2-1212": "E3-1",
+          "E2-1213": "E3-1",
+          "E2-1214": "E3-1",
+          "E2-1215": "E3-1",
+          "E2-1216": "E3-1",
+          "E2-1217": "E3-1"
+        }
+      },
+      {
+        "id": "E3-1",
+        "text": "¿La inspección deL tórax es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "TÓRAX",
+        "codes": {
+          "E3-11": "Si",
+          "E3-12": "No"
+        },
+        "transitions": {
+          "E3-11": "E3-2",
+          "E3-12": "E3-121"
+        }
+      },
+      {
+        "id": "E3-121",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "TÓRAX",
+        "codes": {
+          "E3-1211": "Dermatitis",
+          "E3-1212": "Ginecomastia",
+          "E3-1213": "Pectus excavatum",
+          "E3-1214": "Pectus carinatum",
+          "E3-1215": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E3-1211": "E3-2",
+          "E3-1212": "E3-2",
+          "E3-1213": "E3-2",
+          "E3-1214": "E3-2",
+          "E3-1215": "E3-2"
+        }
+      },
+      {
+        "id": "E3-2",
+        "text": "¿La auscultación cardíaca es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "TÓRAX",
+        "codes": {
+          "E3-21": "Si",
+          "E3-22": "No"
+        },
+        "transitions": {
+          "E3-21": "E3-3",
+          "E3-22": "E3-221"
+        }
+      },
+      {
+        "id": "E3-221",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "TÓRAX",
+        "codes": {
+          "E3-2211": "Extrasístoles",
+          "E3-2212": "Ruidos arrítmicos",
+          "E3-2213": "Soplo cardiaco en foco aórtico",
+          "E3-2214": "Soplo cardiaco en foco mitral",
+          "E3-2215": "Soplo cardiaco en foco pulmonar",
+          "E3-2216": "Soplo cardiaco en foco tricúspideo",
+          "E3-2217": "Soplo cardíaco sin precisar foco",
+          "E3-2218": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E3-2211": "E3-3",
+          "E3-2212": "E3-3",
+          "E3-2213": "E3-3",
+          "E3-2214": "E3-3",
+          "E3-2215": "E3-3",
+          "E3-2216": "E3-3",
+          "E3-2217": "E3-3",
+          "E3-2218": "E3-3"
+        }
+      },
+      {
+        "id": "E3-3",
+        "text": "¿La auscultación pulmonar es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "TÓRAX",
+        "codes": {
+          "E3-31": "Si",
+          "E3-32": "No"
+        },
+        "transitions": {
+          "E3-31": "E4-1",
+          "E3-32": "E3-3121"
+        }
+      },
+      {
+        "id": "E3-3121",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "TÓRAX",
+        "codes": {
+          "E3-3121": "Crepitantes en ambos hemitorax",
+          "E3-3122": "Crepitantes en hemitorax dcho",
+          "E3-3123": "Crepitantes hemitorax izdo",
+          "E3-3124": "Hipoventilación ambos hemitorax",
+          "E3-3125": "Hipoventilación hemitorax dcho",
+          "E3-3126": "Hipoventilación hemitorax izdo",
+          "E3-3127": "Sibilancias en ambos hemitorax",
+          "E3-3128": "Sibilancias en hemitorax dcho",
+          "E3-3129": "Sibilancias hemitorax izdo",
+          "E3-3130": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E3-3121": "E4-1",
+          "E3-3122": "E4-1",
+          "E3-3123": "E4-1",
+          "E3-3124": "E4-1",
+          "E3-3125": "E4-1",
+          "E3-3126": "E4-1",
+          "E3-3127": "E4-1",
+          "E3-3128": "E4-1",
+          "E3-3129": "E4-1",
+          "E3-3130": "E4-1"
+        }
+      },
+      {
+        "id": "E4-1",
+        "text": "¿La inspección del abdomen es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "ABDOMEN",
+        "codes": {
+          "E4-11": "Si",
+          "E4-12": "No"
+        },
+        "transitions": {
+          "E4-11": "E4-2",
+          "E4-12": "E4-121"
+        }
+      },
+      {
+        "id": "E4-121",
+        "text": "¿Qué se detecta?",
+        "question_type": "free",
+        "module": "exam",
+        "section": "ABDOMEN",
+        "codes": {
+          "E4-1211": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E4-1211": "E4-2"
+        }
+      },
+      {
+        "id": "E4-2",
+        "text": "¿La exploración del abdomen es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "ABDOMEN",
+        "codes": {
+          "E4-21": "Si",
+          "E4-22": "No"
+        },
+        "transitions": {
+          "E4-21": "E5-1",
+          "E4-22": "E4-221"
+        }
+      },
+      {
+        "id": "E4-221",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "ABDOMEN",
+        "codes": {
+          "E4-2211": "Ascitis",
+          "E4-2212": "Esplenomegalia",
+          "E4-2213": "Eventración",
+          "E4-2214": "Hepatomegalia",
+          "E4-2215": "Hernia inguinal bilateral",
+          "E4-2216": "Hernia inguinal dcha",
+          "E4-2217": "Hernia inguinal Izda",
+          "E4-2218": "Hernia umbilical",
+          "E4-2219": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E4-2211": "E5-1",
+          "E4-2212": "E5-1",
+          "E4-2213": "E5-1",
+          "E4-2214": "E5-1",
+          "E4-2215": "E5-1",
+          "E4-2216": "E5-1",
+          "E4-2217": "E5-1",
+          "E4-2218": "E5-1",
+          "E4-2219": "E5-1"
+        }
+      },
+      {
+        "id": "E5-1",
+        "text": "¿La exploración de extremidades superiores es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "EXTREMIDADES",
+        "codes": {
+          "E5-11": "Si",
+          "E5-12": "No"
+        },
+        "transitions": {
+          "E5-11": "E5-2",
+          "E5-12": "E5-121"
+        }
+      },
+      {
+        "id": "E5-121",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "EXTREMIDADES",
+        "codes": {
+          "E5-1211": "Dupuytren ambas manos",
+          "E5-1212": "Dupuytren  mano izda",
+          "E5-1213": "Dupuytren mano dcha",
+          "E5-1214": "Nodulos de Heberden ambas manos",
+          "E5-1215": "Nodulos de Heberden mano dcha",
+          "E5-1216": "Nodulos de Heberden mano izda",
+          "E5-1217": "Sinovitis",
+          "E5-1218": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E5-1211": "E5-2",
+          "E5-1212": "E5-2",
+          "E5-1213": "E5-2",
+          "E5-1214": "E5-2",
+          "E5-1215": "E5-2",
+          "E5-1216": "E5-2",
+          "E5-1217": "E5-2",
+          "E5-1218": "E5-2"
+        }
+      },
+      {
+        "id": "E5-2",
+        "text": "¿La exploración de extremidades inferiores es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "EXTREMIDADES",
+        "codes": {
+          "E5-21": "Si",
+          "E5-22": "No"
+        },
+        "transitions": {
+          "E5-21": "E6-1",
+          "E5-22": "E5-221"
+        }
+      },
+      {
+        "id": "E5-221",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "EXTREMIDADES",
+        "codes": {
+          "E5-2211": "Edema ambas piernas",
+          "E5-2212": "Edema pierna dcha",
+          "E5-2213": "Edema pierna izda",
+          "E5-2214": "Genu valgo ambas rodillas",
+          "E5-2215": "Genu valgo rodilla dcha",
+          "E5-2216": "Genu valgo rodilla izda",
+          "E5-2217": "Genu varo ambas rodillas",
+          "E5-2218": "Genu varo rodilla dcha",
+          "E5-2219": "Genu varo rodilla izda",
+          "E5-2220": "Hallux Valgus ambos pies",
+          "E5-2221": "Hallux Valgus pie dcha",
+          "E5-2222": "Hallux Valgus pie izda",
+          "E5-2223": "Pulsos disminuidos ambas piernas",
+          "E5-2224": "Pulsos disminuidos pierna dcha",
+          "E5-2225": "Pulsos disminuidos pierna izda",
+          "E5-2226": "Trastornos tróficos ambas piernas",
+          "E5-2227": "Trastornos tróficos pierna dcha",
+          "E5-2228": "Trastornos tróficos pierna izda",
+          "E5-2229": "Varices ambas piernas",
+          "E5-2230": "Varices pierna dcha",
+          "E5-2231": "Varices pierna izda",
+          "E5-2232": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E5-2211": "E6-1",
+          "E5-2212": "E6-1",
+          "E5-2213": "E6-1",
+          "E5-2214": "E6-1",
+          "E5-2215": "E6-1",
+          "E5-2216": "E6-1",
+          "E5-2217": "E6-1",
+          "E5-2218": "E6-1",
+          "E5-2219": "E6-1",
+          "E5-2220": "E6-1",
+          "E5-2221": "E6-1",
+          "E5-2222": "E6-1",
+          "E5-2223": "E6-1",
+          "E5-2224": "E6-1",
+          "E5-2225": "E6-1",
+          "E5-2226": "E6-1",
+          "E5-2227": "E6-1",
+          "E5-2228": "E6-1",
+          "E5-2229": "E6-1",
+          "E5-2230": "E6-1",
+          "E5-2231": "E6-1",
+          "E5-2232": "E6-1"
+        }
+      },
+      {
+        "id": "E6-1",
+        "text": "¿La exploración osteomuscular de columna es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "EXPLORACIÓN OSTEOMUSCULAR",
+        "codes": {
+          "E6-11": "Si",
+          "E6-12": "No"
+        },
+        "transitions": {
+          "E6-11": "E6-2",
+          "E6-12": "E6-121"
+        }
+      },
+      {
+        "id": "E6-121",
+        "text": "¿Qué se detecta en columna?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "EXPLORACIÓN OSTEOMUSCULAR",
+        "codes": {
+          "E6-1211": "Cifosis",
+          "E6-1212": "Escoliosis dorso lumbar",
+          "E6-1213": "Hiperlordosis lumbar",
+          "E6-1214": "Movilidad disminuida de la columna cervical",
+          "E6-1215": "Movilidad disminuida de la columna dorsal",
+          "E6-1216": "Movilidad disminuida de la columna lumbar",
+          "E6-1217": "Movilización dolorosa de la columna cervical",
+          "E6-1218": "Movilización dolorosa de la columna dorsal",
+          "E6-1219": "Movilización dolorosa de la columna lumbar",
+          "E6-1220": "Palpación apofisis espinosa cervical dolorosa",
+          "E6-1221": "Palpación apofisis espinosa dorsal dolorosa",
+          "E6-1222": "Palpación apofisis espinosa lumbar dolorosa",
+          "E6-1223": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E6-1211": "E6-2",
+          "E6-1212": "E6-2",
+          "E6-1213": "E6-2",
+          "E6-1214": "E6-2",
+          "E6-1215": "E6-2",
+          "E6-1216": "E6-2",
+          "E6-1217": "E6-2",
+          "E6-1218": "E6-2",
+          "E6-1219": "E6-2",
+          "E6-1220": "E6-2",
+          "E6-1221": "E6-2",
+          "E6-1222": "E6-2",
+          "E6-1223": "E6-2"
+        }
+      },
+      {
+        "id": "E6-2",
+        "text": "¿La exploración osteomuscular de extremidad superior es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "EXPLORACIÓN OSTEOMUSCULAR",
+        "codes": {
+          "E6-21": "Si",
+          "E6-22": "No"
+        },
+        "transitions": {
+          "E6-21": "E6-3",
+          "E6-22": "E6-221"
+        }
+      },
+      {
+        "id": "E6-221",
+        "text": "¿Qué se detecta en articulaciones extremidad superior?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "EXPLORACIÓN OSTEOMUSCULAR",
+        "codes": {
+          "E6-2221": "Dolor a la palpación en ambos codos",
+          "E6-2222": "Dolor a la palpación en ambos muñecas",
+          "E6-2223": "Dolor a la palpación en codo dcho",
+          "E6-2224": "Dolor a la palpación en codo izdo",
+          "E6-2225": "Dolor a la palpación en muñeca dcho",
+          "E6-2226": "Dolor a la palpación en muñeca izdo",
+          "E6-2227": "Reflejo bicipital bilateral disminuido",
+          "E6-2228": "Reflejo bicipital dcho disminuido",
+          "E6-2229": "Reflejo bicipital izdo disminuido",
+          "E6-2230": "Dolor a la palpación en ambos codos",
+          "E6-2231": "Dolor a la palpación en ambos muñecas",
+          "E6-2232": "Dolor a la palpación en codo dcho",
+          "E6-2233": "Dolor a la movilización en ambos codos",
+          "E6-2234": "Dolor a la movilización en ambos muñecas",
+          "E6-2235": "Dolor a la movilización en codo dcho",
+          "E6-2236": "Dolor a la movilización en codo izdo",
+          "E6-2237": "Dolor a la movilización en muñeca dcho",
+          "E6-2238": "Dolor a la movilización en muñeca izdo",
+          "E6-2239": "Dolor a la movilización en ambos codos",
+          "E6-2240": "Dolor a la movilización en ambos muñecas",
+          "E6-2241": "Dolor a la movilización en codo dcho",
+          "E6-2242": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E6-2221": "E6-3",
+          "E6-2222": "E6-3",
+          "E6-2223": "E6-3",
+          "E6-2224": "E6-3",
+          "E6-2225": "E6-3",
+          "E6-2226": "E6-3",
+          "E6-2227": "E6-3",
+          "E6-2228": "E6-3",
+          "E6-2229": "E6-3",
+          "E6-2230": "E6-3",
+          "E6-2231": "E6-3",
+          "E6-2232": "E6-3",
+          "E6-2233": "E6-3",
+          "E6-2234": "E6-3",
+          "E6-2235": "E6-3",
+          "E6-2236": "E6-3",
+          "E6-2237": "E6-3",
+          "E6-2238": "E6-3",
+          "E6-2239": "E6-3",
+          "E6-2240": "E6-3",
+          "E6-2241": "E6-3",
+          "E6-2242": "E6-3"
+        }
+      },
+      {
+        "id": "E6-3",
+        "text": "¿La exploración osteomuscular de extremidad inferior es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "EXPLORACIÓN OSTEOMUSCULAR",
+        "codes": {
+          "E6-31": "Si",
+          "E6-32": "No"
+        },
+        "transitions": {
+          "E6-31": "E7-1",
+          "E6-32": "E6-321"
+        }
+      },
+      {
+        "id": "E6-321",
+        "text": "¿Qué se detecta en articulaciones extremidad inferior?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "EXPLORACIÓN OSTEOMUSCULAR",
+        "codes": {
+          "E6-3211": "Dolor a la palpación ambas rodillas",
+          "E6-3212": "Dolor a la palpación ambos tobillos",
+          "E6-3213": "Dolor a la palpación rodilla izda",
+          "E6-3214": "Dolor a la palpación tobillo dcha",
+          "E6-3215": "Dolor a la palpación tobillo izdo",
+          "E6-3216": "Lasegue + dcho",
+          "E6-3217": "Lasegue + izdo",
+          "E6-3218": "Reflejo bicipital bilateral disminuido",
+          "E6-3219": "Reflejo bicipital dcho disminuido",
+          "E6-3220": "Reflejo bicipital izdo disminuido",
+          "E6-3221": "Dolor a la movilización ambas rodillas",
+          "E6-3222": "Dolor a la movilización ambos tobillos",
+          "E6-3223": "Dolor a la movilización rodilla izda",
+          "E6-3224": "Dolor a la movilización tobillo dcha",
+          "E6-3225": "Dolor a la movilización tobillo izdo",
+          "E6-3226": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E6-3211": "E7-1",
+          "E6-3212": "E7-1",
+          "E6-3213": "E7-1",
+          "E6-3214": "E7-1",
+          "E6-3215": "E7-1",
+          "E6-3216": "E7-1",
+          "E6-3217": "E7-1",
+          "E6-3218": "E7-1",
+          "E6-3219": "E7-1",
+          "E6-3220": "E7-1",
+          "E6-3221": "E7-1",
+          "E6-3222": "E7-1",
+          "E6-3223": "E7-1",
+          "E6-3224": "E7-1",
+          "E6-3225": "E7-1",
+          "E6-3226": "E7-1"
+        }
+      },
+      {
+        "id": "E7-1",
+        "text": "¿La exploración neurológica es normal?",
+        "question_type": "yesno",
+        "module": "exam",
+        "section": "EXPLORACIÓN NEUROLÓGICA",
+        "codes": {
+          "E7-11": "Si",
+          "E7-12": "No"
+        },
+        "transitions": {
+          "E7-11": null,
+          "E7-12": "E7-121"
+        }
+      },
+      {
+        "id": "E7-121",
+        "text": "¿Qué se detecta?",
+        "question_type": "multiple",
+        "module": "exam",
+        "section": "EXPLORACIÓN NEUROLÓGICA",
+        "codes": {
+          "E7-1211": "Marcha anormal",
+          "E7-1212": "Pares craneales anormales",
+          "E7-1213": "Pruebas cerebelosas anormales",
+          "E7-1214": "Reflejo  rotuliano bilateral disminuido",
+          "E7-1215": "Reflejo  rotuliano izdo disminuido",
+          "E7-1216": "Reflejo bicipital bilateral disminuido",
+          "E7-1217": "Reflejo bicipital dcho disminuido",
+          "E7-1218": "Reflejo bicipital izdo disminuido",
+          "E7-1219": "Reflejo rotuliano dcho disminuido",
+          "E7-1220": "Romberg +",
+          "E7-1221": "Sensibilidad profunda alterada",
+          "E7-1222": "Sensibilidad superficial alterada",
+          "E7-1223": "Temblor  mano dcha",
+          "E7-1224": "Temblor ambas manos",
+          "E7-1225": "Temblor mano izda",
+          "E7-1226": "#TEXTO_LIBRE#"
+        },
+        "transitions": {
+          "E7-1211": null,
+          "E7-1212": null,
+          "E7-1213": null,
+          "E7-1214": null,
+          "E7-1215": null,
+          "E7-1216": null,
+          "E7-1217": null,
+          "E7-1218": null,
+          "E7-1219": null,
+          "E7-1220": null,
+          "E7-1221": null,
+          "E7-1222": null,
+          "E7-1223": null,
+          "E7-1224": null,
+          "E7-1225": null,
+          "E7-1226": null
+        }
+      }
+    ]
+  }
+}
