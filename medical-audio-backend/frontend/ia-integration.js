@@ -106,21 +106,28 @@ async function procesarAudio(audioBlob, filename) {
   }
 }
 
+function switchTab(tab) {
+  document.querySelectorAll('.ia-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.ia-tab-content').forEach(c => c.style.display = 'none');
+  document.querySelector(`.ia-tab[data-tab="${tab}"]`).classList.add('active');
+  document.getElementById(`ia-tab-${tab}`).style.display = 'block';
+}
+
 function mostrarPreview(resultado) {
+  // --- Respuestas ---
   const container = document.getElementById('ia-preview-content');
   const answered = (resultado.history?.answers || []).concat(resultado.exam?.answers || []);
 
   if (answered.length === 0) {
     container.innerHTML = '<p style="color:#888">No se detectaron respuestas en el audio.</p>';
-    return;
+  } else {
+    container.innerHTML = answered.map(a => `
+      <div class="ia-preview-item">
+        <span class="ia-question">${a.question_text}</span>
+        <span class="ia-answer">${(a.selected_labels || []).join(', ')}${a.free_text ? ': ' + a.free_text : ''}</span>
+      </div>
+    `).join('');
   }
-
-  container.innerHTML = answered.map(a => `
-    <div class="ia-preview-item">
-      <span class="ia-question">${a.question_text}</span>
-      <span class="ia-answer">${(a.selected_labels || []).join(', ')}${a.free_text ? ': ' + a.free_text : ''}</span>
-    </div>
-  `).join('');
 
   if (resultado.datos_adicionales && resultado.datos_adicionales.length > 0) {
     document.getElementById('ia-datos-adicionales').textContent =
@@ -128,6 +135,22 @@ function mostrarPreview(resultado) {
   } else {
     document.getElementById('ia-datos-adicionales').textContent = '';
   }
+
+  // --- Metadata ---
+  const meta = resultado.metadata || {};
+  document.getElementById('ia-metadata').textContent =
+    `⏱ Transcripción: ${meta.transcription_time_seconds || '?'}s · Extracción: ${meta.extraction_time_seconds || '?'}s · Total: ${meta.total_time_seconds || '?'}s · Preguntas respondidas: ${meta.questions_answered || 0}/${meta.questions_total || '?'}`;
+
+  // --- Transcripción ---
+  document.getElementById('ia-transcription-text').textContent =
+    resultado.transcription || '(sin transcripción)';
+
+  // --- Resumen clínico ---
+  document.getElementById('ia-summary-text').textContent =
+    resultado.clinical_summary || '(sin resumen)';
+
+  // Mostrar primer tab por defecto
+  switchTab('answers');
 }
 
 function confirmarResultado() {

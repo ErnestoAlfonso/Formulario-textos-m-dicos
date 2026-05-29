@@ -4,6 +4,17 @@ from config import JSON_PATH
 
 
 _form_data_cache = None
+_raw_form_cache = None
+
+
+def load_raw_form(path: Path = None) -> dict:
+    global _raw_form_cache
+    if _raw_form_cache is not None:
+        return _raw_form_cache
+    path = path or JSON_PATH
+    with open(path, encoding="utf-8") as f:
+        _raw_form_cache = json.load(f)
+    return _raw_form_cache
 
 
 def load_form(path: Path = None) -> dict:

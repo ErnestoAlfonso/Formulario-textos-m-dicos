@@ -4,120 +4,155 @@ import re
 import ollama
 from config import OLLAMA_MODEL, OLLAMA_TEMPERATURE
 
-EXTRACTION_PROMPT = """
-Eres un asistente médico que completa formularios estructurados.
 
-Tienes el resumen clínico de una consulta y las preguntas de una sección del formulario.
-Tu tarea es seleccionar los códigos correctos para cada pregunta respondida en el resumen.
-
-RESUMEN CLÍNICO (sección relevante):
-{section_summary}
-
-PREGUNTAS DE LA SECCIÓN "{section_name}":
-{questions_json}
-
-INSTRUCCIONES:
-1. Responde ÚNICAMENTE con un array JSON válido
-2. Solo incluye preguntas que TENGAN respuesta en el resumen
-3. Para preguntas "yesno": selecciona UN código (Sí o No)
-4. Para preguntas "multiple": puedes seleccionar VARIOS códigos
-5. Para preguntas "choice": selecciona UN código (frecuencia)
-6. Para preguntas "yesnoremember": selecciona UN código (Sí/No/No recuerda)
-7. Para preguntas "free" o cuando eliges "#TEXTO_LIBRE#": incluye el texto en "free_text"
-8. Si la información no está en el resumen, NO incluyas la pregunta
-9. NO inventes códigos. Usa EXACTAMENTE los codes del JSON
-
-FORMATO DE RESPUESTA (solo este JSON, sin texto adicional):
-[
-  {{
-    "question_id": "A1-1",
-    "selected_codes": ["A1-11"],
-    "free_text": null
-  }},
-  {{
-    "question_id": "A1-121",
-    "selected_codes": ["A1-12119", "A1-12122"],
-    "free_text": null
-  }}
-]
-"""
-
-
-def parse_llm_json(raw_response: str) -> list:
+def parse_llm_response(raw_response: str) -> dict | None:
     cleaned = re.sub(r'```json|```', '', raw_response).strip()
-    match = re.search(r'\[.*\]', cleaned, re.DOTALL)
+    match = re.search(r'\{.*\}', cleaned, re.DOTALL)
     if not match:
-        return []
+        return None
     try:
         return json.loads(match.group())
     except json.JSONDecodeError:
-        return []
+        return None
 
 
-async def extract_section(
-    section_name: str,
-    questions: list,
-    section_summary: str
-) -> list:
-    prompt = EXTRACTION_PROMPT.format(
-        section_name=section_name,
-        section_summary=section_summary or "Sin información registrada",
-        questions_json=json.dumps(questions, ensure_ascii=False, indent=2),
+def follow_transition(question: dict, selected_codes: list[str]) -> str | None:
+    if not selected_codes:
+        return None
+    transitions = question.get("transitions", {})
+    for code in selected_codes:
+        if code in transitions:
+            target = transitions[code]
+            if target:
+                return target
+    return None
+
+
+def build_single_question_prompt(question: dict, clinical_summary: str) -> str:
+    codes_str = "\n".join(
+        f"  {cid}: {label}"
+        for cid, label in question.get("codes", {}).items()
     )
-    response = ollama.chat(
-        model=OLLAMA_MODEL,
-        messages=[{"role": "user", "content": prompt}],
-        options={"temperature": OLLAMA_TEMPERATURE}
-    )
-    return parse_llm_json(response["message"]["content"])
+
+    return f"""
+Eres un asistente médico que completa formularios de reconocimiento médico.
+
+RESUMEN CLÍNICO DE LA CONSULTA:
+{clinical_summary}
+
+PREGUNTA A RESPONDER:
+ID: {question['id']}
+Texto: {question['text']}
+Tipo: {question['question_type']}
+
+CÓDIGOS DISPONIBLES:
+{codes_str}
+
+INSTRUCCIONES:
+1. Basándote ÚNICAMENTE en el resumen clínico, selecciona la opción correcta.
+2. Para tipo "yesno": selecciona el código de "Sí" o "No". Si no se menciona, elige "No".
+3. Para tipo "multiple": selecciona TODOS los códigos aplicables.
+4. Para tipo "choice": selecciona UN código (la opción más específica).
+5. Para tipo "yesnoremember": selecciona "Sí", "No" o "No recuerda".
+6. Para tipo "free": usa el código "#TEXTO_LIBRE#" y escribe el texto en "free_text".
+7. Para "#TEXTO_LIBRE#" en cualquier tipo: incluye el texto en "free_text".
+8. Si la información no está explícita en el resumen, selecciona la opción más conservativa (No, Ninguno, Sin información).
+9. No inventes códigos. Usa EXACTAMENTE los códigos listados arriba.
+
+RESPONDE ÚNICAMENTE CON ESTE JSON:
+{{"selected_codes": ["CODIGO1", "CODIGO2"], "free_text": null}}
+"""
 
 
-def split_summary_by_section(summary: str) -> dict:
-    sections = {}
-    current_section = None
-    current_lines = []
+async def ask_single_question(question: dict, clinical_summary: str) -> dict | None:
+    prompt = build_single_question_prompt(question, clinical_summary)
 
-    for line in summary.split("\n"):
-        line_stripped = line.strip()
-        if line_stripped.endswith(":") and line_stripped.isupper() or \
-           (line_stripped.startswith("- ") and line_stripped[2:].strip().isupper()):
-            if current_section:
-                sections[current_section] = "\n".join(current_lines).strip()
-            current_section = line_stripped.rstrip(":").strip("- ").strip()
-            current_lines = []
-        elif current_section:
-            current_lines.append(line)
-
-    if current_section:
-        sections[current_section] = "\n".join(current_lines).strip()
-
-    return sections
-
-
-async def extract_all_sections(summary: str, form_data: dict, module: str = "both") -> list:
-    section_summaries = split_summary_by_section(summary)
-
-    tasks = []
-    for section_name, questions in form_data["sections"].items():
-        if module == "history" and "EXPLORACIÓN" in section_name.upper():
-            continue
-        if module == "exam" and "EXPLORACIÓN" not in section_name.upper() and \
-           module != "both":
-            continue
-        if module == "exam" and "EXPLORACIÓN" in section_name.upper():
-            pass
-        task = extract_section(
-            section_name=section_name,
-            questions=questions,
-            section_summary=section_summaries.get(section_name, ""),
+    def _call_ollama():
+        return ollama.chat(
+            model=OLLAMA_MODEL,
+            messages=[{"role": "user", "content": prompt}],
+            options={"temperature": OLLAMA_TEMPERATURE}
         )
-        tasks.append(task)
 
-    results = await asyncio.gather(*tasks, return_exceptions=True)
+    response = await asyncio.to_thread(_call_ollama)
+    raw = response["message"]["content"]
 
-    all_answers = []
-    for result in results:
-        if isinstance(result, list):
-            all_answers.extend(result)
+    result = parse_llm_response(raw)
+    if not result:
+        return None
 
-    return all_answers
+    valid_codes = question.get("codes", {})
+    selected = result.get("selected_codes", [])
+    valid = [c for c in selected if c in valid_codes]
+
+    if result.get("free_text") and not valid:
+        for cid, label in valid_codes.items():
+            if label == "#TEXTO_LIBRE#":
+                valid = [cid]
+                break
+
+    if not valid and not result.get("free_text"):
+        return None
+
+    return {
+        "question_id": question["id"],
+        "selected_codes": valid,
+        "free_text": result.get("free_text"),
+    }
+
+
+async def walk_module(
+    module_key: str,
+    clinical_summary: str,
+    raw_data: dict,
+) -> list:
+    module = raw_data[module_key]
+    q_map = {q["id"]: q for q in module["questions"]}
+    entry = module["entry_question_id"]
+
+    answers = []
+    current = entry
+    visited = set()
+
+    while current and current not in visited:
+        visited.add(current)
+        question = q_map.get(current)
+        if not question:
+            break
+
+        result = await ask_single_question(question, clinical_summary)
+
+        if result:
+            answers.append(result)
+            current = follow_transition(question, result["selected_codes"])
+        else:
+            transitions = question.get("transitions", {})
+            if transitions:
+                current = next(
+                    (v for v in transitions.values() if v),
+                    None
+                )
+            else:
+                break
+
+    return answers
+
+
+async def extract_all_questions(
+    clinical_summary: str,
+    raw_data: dict,
+    module: str = "both"
+) -> list:
+    if module == "both":
+        hist_task = walk_module("history", clinical_summary, raw_data)
+        exam_task = walk_module("exam", clinical_summary, raw_data)
+        hist_answers, exam_answers = await asyncio.gather(
+            hist_task, exam_task
+        )
+        return hist_answers + exam_answers
+    elif module == "history":
+        return await walk_module("history", clinical_summary, raw_data)
+    elif module == "exam":
+        return await walk_module("exam", clinical_summary, raw_data)
+    else:
+        return await walk_module("history", clinical_summary, raw_data)

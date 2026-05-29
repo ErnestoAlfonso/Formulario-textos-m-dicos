@@ -1,0 +1,368 @@
+=== GUIÓN COMPLETO - RECONOCIMIENTO MÉDICO ===
+(Seguir el orden exacto del árbol de decisión)
+
+---
+
+Médico: Buen día, voy a realizarle el cuestionario para el reconocimiento médico ocupacional. ¿Ha trabajado anteriormente?
+
+Paciente: Sí, he trabajado antes.
+
+Médico: ¿En qué tipo de industria?
+
+Paciente: Trabajé en la industria metalúrgica y también en salud.
+
+Médico: ¿A qué riesgos ha estado expuesto en esos trabajos?
+
+Paciente: Estuve expuesto a ruido, manipulación de cargas y movimientos repetitivos.
+
+Médico: En su trabajo actual, ¿su jornada diaria es a tiempo completo?
+
+Paciente: Sí, trabajo a tiempo completo.
+
+Médico: En su trabajo actual, ¿está expuesto a riesgos?
+
+Paciente: Sí, estoy expuesto a ruido principalmente.
+
+Médico: ¿A qué riesgos específicamente?
+
+Paciente: A ruido, posturas forzadas y pantallas de visualización.
+
+Médico: En su trabajo actual, ¿utiliza equipos de protección individual?
+
+Paciente: Sí, utilizo.
+
+Médico: ¿Qué EPI utiliza?
+
+Paciente: Uso casco auditivo, tapones auditivos y gafas.
+
+Médico: Pasemos a los antecedentes familiares. ¿Tiene su padre alguna enfermedad de interés?
+
+Paciente: Sí, mi padre tuvo hipertensión arterial.
+
+Médico: ¿Qué enfermedades ha tenido específicamente?
+
+Paciente: Hipertensión arterial y diabetes tipo II.
+
+Médico: ¿Tiene su madre alguna enfermedad de interés?
+
+Paciente: Sí, mi madre tiene osteoporosis y también ha tenido problemas de tiroides.
+
+Médico: ¿Qué enfermedades ha tenido?
+
+Paciente: Osteoporosis e hipotiroidismo.
+
+Médico: ¿Tiene hermanos? Y si tiene, ¿tienen alguna enfermedad de interés?
+
+Paciente: No, no tengo hermanos.
+
+Médico: Ahora sobre sus enfermedades. ¿Padece o ha padecido alguna enfermedad?
+
+Paciente: Sí, he tenido algunas.
+
+Médico: ¿Alguna enfermedad del corazón?
+
+Paciente: Sí, tengo hipertensión y a veces tengo taquicardia.
+
+Médico: ¿Alguna enfermedad del aparato digestivo?
+
+Paciente: Sí, tengo gastritis y reflujo.
+
+Médico: ¿Alguna enfermedad del aparato respiratorio?
+
+Paciente: No, ninguna.
+
+Médico: ¿Alguna enfermedad del aparato urinario?
+
+Paciente: No, tampoco.
+
+Médico: ¿Alguna enfermedad del metabolismo?
+
+Paciente: Sí, tengo el colesterol alto.
+
+Médico: ¿Alguna enfermedad de la sangre?
+
+Paciente: No.
+
+Médico: ¿Alguna enfermedad psicológica?
+
+Paciente: No.
+
+Médico: ¿Alguna enfermedad del sistema nervioso?
+
+Paciente: A veces tengo vértigo, nada más.
+
+Médico: ¿Alguna enfermedad de los órganos de los sentidos?
+
+Paciente: Sí, tengo miopía y rinitis alérgica.
+
+Médico: ¿Alguna enfermedad reumatológica?
+
+Paciente: No.
+
+Médico: ¿Alguna enfermedad de la piel?
+
+Paciente: No.
+
+Médico: ¿Alguna del aparato locomotor?
+
+Paciente: No.
+
+Médico: ¿Alguna otra enfermedad no mencionada?
+
+Paciente: No, creo que ya le dije todo.
+
+Médico: Bien. Ahora hablemos de medicación. ¿Toma alguna medicación actualmente?
+
+Paciente: Sí, tomo medicación.
+
+Médico: ¿Para el corazón?
+
+Paciente: No.
+
+Médico: ¿Para la tensión?
+
+Paciente: Sí, tomo antihipertensivos.
+
+Médico: ¿Para el aparato digestivo?
+
+Paciente: Tomo protectores gástricos para la gastritis.
+
+Médico: ¿Para el aparato respiratorio?
+
+Paciente: No.
+
+Médico: ¿Para el sistema genitourinario?
+
+Paciente: No.
+
+Médico: ¿Para el metabolismo? ¿Para el colesterol?
+
+Paciente: Sí, tomo hipolipemiantes para el colesterol.
+
+Médico: ¿Para enfermedades de la sangre?
+
+Paciente: No.
+
+Médico: ¿Para las alergias?
+
+Paciente: No.
+
+Médico: ¿Para problemas reumáticos?
+
+Paciente: No.
+
+Médico: ¿Para problemas psicológicos?
+
+Paciente: No.
+
+Médico: ¿Para problemas de los órganos de los sentidos?
+
+Paciente: No.
+
+Médico: ¿Para problemas del sistema nervioso?
+
+Paciente: No.
+
+Médico: ¿Para otras enfermedades no descritas?
+
+Paciente: No, solo esas.
+
+Médico: ¿Le han operado de algo hasta la fecha?
+
+Paciente: Sí, me operaron de apendicitis.
+
+Médico: ¿Qué operaciones ha tenido?
+
+Paciente: Me operaron de apendicitis y también de una hernia inguinal.
+
+Médico: Bien. Pasemos a la parte de ginecología. ¿Ha estado embarazada alguna vez?
+
+Paciente: No, no aplica, soy hombre. (O si es mujer: Sí, dos veces.)
+
+Médico: ¿Ha tenido o tiene alguna enfermedad ginecológica?
+
+Paciente: No.
+
+Médico: ¿Toma alguna medicación ginecológica?
+
+Paciente: No.
+
+Médico: ¿Le han operado de algo ginecológico?
+
+Paciente: No.
+
+Médico: Pasemos a los hábitos. ¿Fuma?
+
+Paciente: Sí, fumo.
+
+Médico: ¿Cuánto tabaco consume?
+
+Paciente: Fumo unos 6 a 10 cigarrillos por día.
+
+Médico: ¿Consume bebidas alcohólicas?
+
+Paciente: Sí, de vez en cuando.
+
+Médico: ¿Cuántas unidades consume?
+
+Paciente: De vez en cuando, solo socialmente.
+
+Médico: ¿Consume algún otro estupefaciente?
+
+Paciente: No.
+
+Médico: ¿Ha consumido anteriormente?
+
+Paciente: No, nunca.
+
+Médico: ¿Tiene alguna alergia?
+
+Paciente: Sí, tengo alergia al marisco.
+
+Médico: ¿A alimentos? ¿Al marisco?
+
+Paciente: Sí, al marisco.
+
+Médico: ¿A analgésicos?
+
+Paciente: No.
+
+Médico: ¿A antibióticos?
+
+Paciente: No.
+
+Médico: ¿A otras cosas?
+
+Paciente: No.
+
+Médico: Pasemos a las vacunas. ¿De pequeño le vacunaron?
+
+Paciente: Sí, me vacunaron de todo.
+
+Médico: ¿Se ha vuelto a vacunar de tétanos posteriormente?
+
+Paciente: Sí, me vacuné hace menos de 10 años.
+
+Médico: ¿Recuerda cuándo?
+
+Paciente: Hace unos 5 años.
+
+Médico: ¿Se ha vuelto a vacunar de Hepatitis B?
+
+Paciente: Sí, también.
+
+Médico: ¿Recuerda cuándo?
+
+Paciente: Hace menos de 20 años.
+
+Médico: ¿Recuerda alguna otra vacuna?
+
+Paciente: Sí, me puse la del Covid y la del neumococo.
+
+Médico: ¿Cuál o cuáles?
+
+Paciente: La del Covid y la del neumococo.
+
+Médico: ¿Realiza alguna actividad física?
+
+Paciente: Sí, hago ejercicio.
+
+Médico: ¿Practica algún deporte a diario?
+
+Paciente: No, no todos los días.
+
+Médico: ¿Practica algún deporte semanalmente?
+
+Paciente: Sí, salgo a caminar tres veces por semana.
+
+Médico: ¿Practica algún deporte de vez en cuando?
+
+Paciente: Sí, eso.
+
+Médico: Ahora pasemos a la anamnesis, los síntomas actuales. ¿Trabaja con pantallas?
+
+Paciente: Sí, trabajo con computadora todo el día.
+
+Médico: ¿Tiene deslumbramientos?
+
+Paciente: A veces.
+
+Médico: ¿Tiene picores de ojos?
+
+Paciente: Raramente.
+
+Médico: ¿Tiene quemazón de ojos?
+
+Paciente: Nunca.
+
+Médico: ¿Tiene dolores de cabeza?
+
+Paciente: A veces, sobre todo al final del día.
+
+Médico: ¿Trabaja con ruido elevado?
+
+Paciente: No, en mi trabajo actual no hay ruido.
+
+Médico: ¿Trabaja con vibraciones?
+
+Paciente: No.
+
+Médico: ¿Trabaja con químicos?
+
+Paciente: No.
+
+---
+
+Médico: Bien, eso es todo por la parte de historia clínica. Ahora pasemos a la exploración física.
+
+(EXPLORACIÓN FÍSICA - El médico va examinando)
+
+Médico: Voy a tomarle las constantes. Presión arterial: 128/82. Frecuencia cardíaca: 72. Saturación: 98%. Temperatura: 36.5.
+
+Médico: ¿Peso y talla?
+
+Paciente: Peso 78 kilos y mido 1.75.
+
+Médico: Bien, IMC normal. Vamos a la exploración. ¿Tiene alguna alteración en la cabeza o el cuello?
+
+Paciente: No, ninguna.
+
+Médico: ¿A nivel ocular? ¿Ve bien?
+
+Paciente: Uso lentes para la miopía.
+
+Médico: Para la agudeza visual, ¿ve bien con los lentes? ¿Sí o no?
+
+Paciente: Sí, veo bien con ellos.
+
+Médico: ¿Alguna alteración en oídos?
+
+Paciente: No.
+
+Médico: ¿A nivel respiratorio? ¿Ausculación normal?
+
+Paciente: Sí.
+
+Médico: ¿Cardiovascular? Pulso rítmico, sin soplos.
+
+Paciente: Bien.
+
+Médico: ¿Abdomen? Blando, depresible, sin masas.
+
+Paciente: Bien.
+
+Médico: ¿Aparato locomotor? ¿Columna? ¿Extremidades?
+
+Paciente: Todo normal.
+
+Médico: ¿Piel? ¿Alguna alteración?
+
+Paciente: No, todo bien.
+
+Médico: ¿Neurológico? Reflejos y fuerza conservados.
+
+Paciente: Sí.
+
+Médico: Bien, eso es todo. Muchas gracias.
+
+Paciente: Gracias a usted, doctor.

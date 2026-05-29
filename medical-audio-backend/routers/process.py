@@ -5,15 +5,13 @@ import tempfile
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException
 from services.transcription import transcribe_audio
 from services.summarizer import generate_clinical_summary
-from services.extractor import extract_all_sections
-from services.mapper import load_form, validate_and_map
+from services.extractor import extract_all_questions
+from services.mapper import load_form, load_raw_form, validate_and_map
 from config import ALLOWED_AUDIO_EXTENSIONS
 
 router = APIRouter()
 form_data = load_form()
-
-def get_section_count(form_data: dict) -> int:
-    return len(form_data["sections"])
+raw_form = load_raw_form()
 
 def get_total_questions(form_data: dict) -> int:
     return sum(len(qs) for qs in form_data["sections"].values())
@@ -45,7 +43,7 @@ async def process_audio(
         summary = await generate_clinical_summary(transcription)
         t2 = time.time()
 
-        raw_answers = await extract_all_sections(summary, form_data, module)
+        raw_answers = await extract_all_questions(summary, raw_form, module)
         t3 = time.time()
 
         validated = validate_and_map(raw_answers, form_data)
@@ -66,7 +64,8 @@ async def process_audio(
                 "total_time_seconds": round(time.time() - start, 1),
                 "questions_total": total_questions,
                 "questions_answered": answered_count,
-                "sections_with_data": len(form_data["sections"]),
+                "questions_walked": len(raw_answers),
+                "module": module,
             },
         }
     finally:
